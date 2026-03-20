@@ -1,0 +1,5609 @@
+[
+  {
+    "task": "task1",
+    "scenario": "assist_pull_chair",
+    "video": "task1_assist_pull_chair_q0.mp4",
+    "duration": [
+      0,
+      5
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "Which word below do you think best describe the record's current state",
+    "choices": [
+      "Excited: He is very excited to show the red object in his hand",
+      "Tired: He is carrying a very heavy object(red)",
+      "Happy: He is walking happily towards his friend",
+      "Cannot estimate"
+    ],
+    "answer": 1
+  },
+  {
+    "task": "task1",
+    "scenario": "assist_pull_chair",
+    "video": "task1_assist_pull_chair_q1.mp4",
+    "duration": [
+      0,
+      5
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "Why does the recorder walk to a chair?",
+    "choices": [
+      "He wants to have a rest",
+      "The chair is his target (he wants to put the red object on the chair)",
+      "He is missing the direction",
+      "He randomly chooses a direction to move, no reason"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "assist_pull_chair",
+    "video": "task1_assist_pull_chair_q2.mp4",
+    "duration": [
+      0,
+      1.5
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Which word below do you think best describe the record's current state",
+    "choices": [
+      "Excited: He is very excited to show the red object in his hand",
+      "Tired: He is carrying a very heavy object(red)",
+      "Happy: He is walking happily towards his friend",
+      "Cannot estimate"
+    ],
+    "answer": 1
+  },
+  {
+    "task": "task1",
+    "scenario": "assist_pull_chair",
+    "video": "task1_assist_pull_chair_q3.mp4",
+    "duration": [
+      0,
+      1.5
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "Why does the person in front of the record walk towards the record?",
+    "choices": [
+      "He wants to have a rest",
+      "The chair is his target (he wants to put the red object on the chair)",
+      "He is missing the direction",
+      "He randomly chooses a direction to move, no reason"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "assist_pull_chair",
+    "video": "task1_assist_pull_chair_q4.mp4",
+    "duration": [
+      0,
+      2.5
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "If you are a robot, what do you do next?",
+    "choices": [
+      "I will walk away to give way to the person",
+      "I will do nothing",
+      "I will pull out a chair so that the person carrying an object can have a rest",
+      "I will remove the table and chair to give a way to the person"
+    ],
+    "answer": 2
+  },
+  {
+    "task": "task1",
+    "scenario": "assist_pull_chair",
+    "video": "task1_assist_pull_chair_q5.mp4",
+    "duration": [
+      0,
+      2.5
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "What is the man carrying a red object doing?",
+    "choices": [
+      "He is trying to move the object to another place",
+      "He is standing still and hold the object",
+      "He wants to talk to another person",
+      "He is leaving the room"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "assist_pull_chair",
+    "video": "task1_assist_pull_chair_q6.mp4",
+    "duration": [
+      0,
+      2.5
+    ],
+    "tag": [
+      "3rd",
+      "TOM"
+    ],
+    "question": "What is the mental state of the man carrying a red object doing?",
+    "choices": [
+      "He is very tired and exhausted while carrying since the object is very heavy",
+      "He is very chill since the object is very light",
+      "He is very angry since he needs to move this object",
+      "He is very sad since he cannot move this object"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "assist_pull_chair",
+    "video": "task1_assist_pull_chair_q7.mp4",
+    "duration": [
+      0,
+      8
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Why does the man in the video pull out a chair?",
+    "choices": [
+      "He want to sit on it, since he is standing for too long time and want to have a rest",
+      "He want to give a seat to the man carrying a heavy object",
+      "He thinks the chair is on the way, and the man carring a red object cannot go through",
+      "He is asked to move the chair away by the other person"
+    ],
+    "answer": 1
+  },
+  {
+    "task": "task1",
+    "scenario": "clean_toy",
+    "video": "task1_clean_toy_q0.mp4",
+    "duration": [
+      0,
+      5
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What is the recorder doing?",
+    "choices": [
+      "Cleaning up the toys spreading over the ground",
+      "Siting and resting",
+      "Trying to put toys to the ground",
+      "Trying to stand up and walk to another person"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "clean_toy",
+    "video": "task1_clean_toy_q1.mp4",
+    "duration": [
+      0,
+      5
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "Which word best describes the recorder's mental state?",
+    "choices": [
+      "Busy",
+      "Happy",
+      "Angry",
+      "Curious"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "clean_toy",
+    "video": "task1_clean_toy_q2.mp4",
+    "duration": [
+      0,
+      5
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "What assistance do you think the recorder may need?",
+    "choices": [
+      "Someone sit down and talk with him",
+      "Someone help him collect the toys on the ground",
+      "Someone puts more toys to the ground",
+      "Someone take the toys on the ground away from him"
+    ],
+    "answer": 1
+  },
+  {
+    "task": "task1",
+    "scenario": "clean_toy",
+    "video": "task1_clean_toy_q3.mp4",
+    "duration": [
+      0,
+      4
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Which word best describes the person's mental state in front of you?",
+    "choices": [
+      "Busy",
+      "Happy",
+      "Angry",
+      "Curious"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "clean_toy",
+    "video": "task1_clean_toy_q4.mp4",
+    "duration": [
+      0,
+      4
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What is the man doing in front of you?",
+    "choices": [
+      "He is playing with some toys",
+      "He is trying to take some stucked toys out of the box",
+      "He is trying to tidy up the toys spreading over the floor",
+      "He is sitting on the floor and having rests"
+    ],
+    "answer": 2
+  },
+  {
+    "task": "task1",
+    "scenario": "clean_toy",
+    "video": "task1_clean_toy_q5.mp4",
+    "duration": [
+      0,
+      4
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "What do you think you(the recorder) can do next?",
+    "choices": [
+      "The recorder can go and help the person tidy up the toys",
+      "The recorder can move away the toys on the floor",
+      "The recorder can sit down and chat with the person",
+      "The recorder should leave and not bother the person"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "clean_toy",
+    "video": "task1_clean_toy_q6.mp4",
+    "duration": [
+      0,
+      5
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "What is the man sitting on the floor doing?",
+    "choices": [
+      "Cleaning up the toys spreading over the ground",
+      "Siting and resting",
+      "Trying to put toys to the ground",
+      "Trying to stand up and walk to another person"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "clean_toy",
+    "video": "task1_clean_toy_q7.mp4",
+    "duration": [
+      0,
+      5
+    ],
+    "tag": [
+      "3rd",
+      "TOM"
+    ],
+    "question": "Which word best describes the man who sitting on the floor's mental state?",
+    "choices": [
+      "Busy",
+      "Happy",
+      "Angry",
+      "Curious"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "clean_toy",
+    "video": "task1_clean_toy_q8.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence best describes the two people's interaction in the video?",
+    "choices": [
+      "The man in black is busying collecting the toys, and the man in white in the left go and help him.",
+      "The man in black is busying collecting the toys, and the man in the left go and sit beside him to talk with him.",
+      "The man in black in the right is working on his task, and the other person go and greet him",
+      "The man in black is doing something wrong, and the other person is sitting beside him to guide and corret him"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "drop-trash",
+    "video": "task1_drop-trash_q0.mp4",
+    "duration": [
+      0,
+      5
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What are you doing while walking down the hallway?",
+    "choices": [
+      "I am holding a paper cup, drinking from it, and finishing my drink",
+      "I am taking a picture of the hallway with my phone",
+      "I am looking for a water fountain to fill up my empty cup",
+      "I am playing with a toy in my hand"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "drop-trash",
+    "video": "task1_drop-trash_q1.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "Why do you extend your hand to give the cup to the person in front of you?",
+    "choices": [
+      "Because I have finished drinking, and I want him to help me throw the empty cup into the trash",
+      "Because I want to share my delicious drink with him",
+      "Because I want him to wash the cup so I can use it again",
+      "Because I want him to fill it up with coffee"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "drop-trash",
+    "video": "task1_drop-trash_q2.mp4",
+    "duration": [
+      0,
+      5
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What does the person in the black jacket do when he ask you to walks to him?",
+    "choices": [
+      "He finishes drinking and extends his hand to give me his used paper cup",
+      "He gives me a brand new cup of coffee as a gift",
+      "He asks me for a cup of water",
+      "He points at the trash can and tells me to empty it"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "drop-trash",
+    "video": "task1_drop-trash_q3.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "What is the implicit intent behind him handing you the cup?",
+    "choices": [
+      "Since he just finished drinking, he expects me to help him dispose of the empty cup as trash",
+      "He is giving me a drink because he thinks I am thirsty",
+      "He wants me to hold it for a second while he ties his shoes",
+      "He wants me to put the cup on the table for display"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "drop-trash",
+    "video": "task1_drop-trash_q4.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "What is your next step after receiving the cup?",
+    "choices": [
+      "I will take the cup, dump the remaining ice/liquid into the sink, and throw the cup into the trash bin",
+      "I will take the cup and drink the rest of the water",
+      "I will put the cup on the table and leave it there",
+      "I will wash the cup carefully with soap and put it in the drying rack"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "drop-trash",
+    "video": "task1_drop-trash_q5.mp4",
+    "duration": [
+      0,
+      20
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "What object is being transferred between the two people?",
+    "choices": [
+      "A used paper cup that the person in the black jacket just drank from",
+      "A full bottle of Coca-Cola",
+      "A stack of papers",
+      "A new, clean paper cup from the dispenser"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "drop-trash",
+    "video": "task1_drop-trash_q6.mp4",
+    "duration": [
+      0,
+      20
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence best describes the overall causal logic of this event?",
+    "choices": [
+      "A person finishes his drink and hands the used cup to a helper, who successfully infers the implicit intent and disposes of the trash properly.",
+      "Two friends are sharing a drink, passing the cup back and forth.",
+      "A person steals a cup from his friend and throws it away to make him angry.",
+      "The helper forces the person to give up his drink and throws it away against his will."
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "find_key",
+    "video": "task1_find_key_q0.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What is the recorder doing?",
+    "choices": [
+      "The recorder is trying to open the door, but he cannot find the key. ",
+      "The recorder is trying to fix the door, but he cannot find the tool he need",
+      "The recorder is trying to open the locked door, but he cannot open it, so he is trying to call a friend to open it",
+      "The recorder is knocking the door, trying to attract the other person's attention"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "find_key",
+    "video": "task1_find_key_q1.mp4",
+    "duration": [
+      0,
+      5.5
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "Which word best describes the recorder's mental state?",
+    "choices": [
+      "Frantic",
+      "Pleased",
+      "Curious",
+      "Sad"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "find_key",
+    "video": "task1_find_key_q2.mp4",
+    "duration": [
+      0,
+      5.5
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "What assistance do you think the recorder may need?",
+    "choices": [
+      "Someone outside to open the door for him",
+      "Remove the lock of the door",
+      "Someone to find his lost key",
+      "Someone to help him fix the broken door"
+    ],
+    "answer": 2
+  },
+  {
+    "task": "task1",
+    "scenario": "find_key",
+    "video": "task1_find_key_q3.mp4",
+    "duration": [
+      0,
+      5
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Which word best describes the person's mental state in front of you?",
+    "choices": [
+      "Frantic",
+      "Pleased",
+      "Curious",
+      "Sad"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "find_key",
+    "video": "task1_find_key_q4.mp4",
+    "duration": [
+      0,
+      5
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What is the man in front of you doing",
+    "choices": [
+      "He is trying to open the door, but he cannot find the key. ",
+      "He is trying to fix the door, but he cannot find the tool he need",
+      "He is trying to open the locked door, but he cannot open it, so he is trying to call a friend to open it",
+      "He is knocking the door, trying to attract the other person's attention"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "find_key",
+    "video": "task1_find_key_q5.mp4",
+    "duration": [
+      0,
+      8
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "What do you think you(the recorder) can do next?",
+    "choices": [
+      "I should give the key to the man in front of me",
+      "I need to keep the key in my pocket since it's my key",
+      "I should leave the key on the table since it's not mine",
+      "I need to leave since the man in front of me is busy doing his work"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "find_key",
+    "video": "task1_find_key_q6.mp4",
+    "duration": [
+      0,
+      6.5
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "What is the man next to the door doing?",
+    "choices": [
+      "The man is trying to open the door, but he cannot find the key. ",
+      "The man is trying to fix the door, but he cannot find the tool he need",
+      "The man is trying to open the locked door, but he cannot open it, so he is trying to call a friend to open it",
+      "The man is knocking the door, trying to attract the other person's attention"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "find_key",
+    "video": "task1_find_key_q7.mp4",
+    "duration": [
+      0,
+      6.5
+    ],
+    "tag": [
+      "3rd",
+      "TOM"
+    ],
+    "question": "Which word best describes the man who standing next to the door's mental state?",
+    "choices": [
+      "Frantic",
+      "Pleased",
+      "Curious",
+      "Sad"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "find_key",
+    "video": "task1_find_key_q8.mp4",
+    "duration": [
+      0,
+      14
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence best describes the two people's interaction in the video?",
+    "choices": [
+      "A person is looking for his lost key, and another person find it and give the key to him",
+      "A person finds the door is broken, another person is seeking some tools to fix the door",
+      "Two people are locked in the room, and they are trying to call their friends to open the door for them",
+      "A person failed to open the door, but another one succeeded"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "interrupt",
+    "video": "task1_interrupt_q0.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What is the recorder doing?",
+    "choices": [
+      "The recorder is chating with another person",
+      "The recorder is doing his own work on a desk",
+      "The recorder is resting in front of a table",
+      "The recorder is looking for something on the table"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "interrupt",
+    "video": "task1_interrupt_q1.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "Which word best describes the recorder's mental state?",
+    "choices": [
+      "Focused",
+      "Distracted",
+      "Indifferent",
+      "Restless"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "interrupt",
+    "video": "task1_interrupt_q2.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What is the recorder doing?",
+    "choices": [
+      "The recorder is chating with another person",
+      "The recorder is doing his own work on a desk",
+      "The recorder is resting in front of a table",
+      "The recorder is looking for something on the table"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "interrupt",
+    "video": "task1_interrupt_q3.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "Which word best describes the recorder's mental state?",
+    "choices": [
+      "Focused",
+      "Distracted",
+      "Indifferent",
+      "Restless"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "interrupt",
+    "video": "task1_interrupt_q4.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Which word best describes the people's mental state in front of you?",
+    "choices": [
+      "Focused",
+      "Distracted",
+      "Indifferent",
+      "Restless"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "interrupt",
+    "video": "task1_interrupt_q5.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What is the people in front of you doing?",
+    "choices": [
+      "They are focused talking to each other",
+      "They are doing their own things without any interaction",
+      "They are finding something together",
+      "They are calling the recorder to join their discussion"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "interrupt",
+    "video": "task1_interrupt_q6.mp4",
+    "duration": [
+      0,
+      5.1
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "If you want to notify one of the person in front of you something, when will you choose to do so?",
+    "choices": [
+      "At the end of the video clip",
+      "Talk to him at the beginning of the video clip",
+      "During the middle of the video clip, when I am close enough to him and make sure he can hear me well",
+      "Anytime during the video clip"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "interrupt",
+    "video": "task1_interrupt_q7.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "What is the people sitting next to the desk doing?",
+    "choices": [
+      "They are focused talking to each other",
+      "They are doing their own things without any interaction",
+      "They are finding something together",
+      "They are calling the recorder to join their discussion"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "interrupt",
+    "video": "task1_interrupt_q8.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "3rd",
+      "TOM"
+    ],
+    "question": "Which word best describes the people sitting next to the desk",
+    "choices": [
+      "Focused",
+      "Distracted",
+      "Indifferent",
+      "Restless"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "interrupt",
+    "video": "task1_interrupt_q9.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "What is the man in white who entering the scene from left side trying to do?",
+    "choices": [
+      "He is trying to join their discussion",
+      "He is trying to give a bottle of water to one of the other people",
+      "He is waiting for instructions from the others",
+      "He is standing still and having rests"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "interrupt",
+    "video": "task1_interrupt_q10.mp4",
+    "duration": [
+      0,
+      14
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Why not the person holding a bottle directly give the bottle to the target person instead of waiting there?",
+    "choices": [
+      "Because the target person is focused talking with another person, it's inappropriate to interrupt",
+      "He is tired while approaching to the target person, so he needs to have a rest before next step",
+      "He is blocked by something on his way",
+      "He is looking for a lost item"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "move-chair",
+    "video": "task1_move-chair_q0.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What is the recorder doing at the beginning?",
+    "choices": [
+      "He is sitting on a chair, and then he stands up",
+      "He is carrying a table across the room",
+      "He is sleeping on the floor",
+      "He is walking away from me"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "move-chair",
+    "video": "task1_move-chair_q1.mp4",
+    "duration": [
+      0,
+      18
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "Why do you walk to the white table and gesture towards it?",
+    "choices": [
+      "Because I want to guide the person carrying the chair to place it exactly at this table",
+      "Because I am cleaning the white table",
+      "Because I want him to take the white table away",
+      "Because I am pointing out a stain on the table"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "move-chair",
+    "video": "task1_move-chair_q2.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What is the person in grey jacket doing in front of you?",
+    "choices": [
+      "He stands up from a chair and points to it",
+      "He grabs a chair and sit down",
+      "He push the vending machine",
+      "He is moving a chair"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "move-chair",
+    "video": "task1_move-chair_q3.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "What do you think the person in grey jacket in front of you want you to do?",
+    "choices": [
+      "He wants you to help him move the chair",
+      "He wants you to talk to him",
+      "He wants you to use the vendor machine",
+      "He wants you to clean the rubbish bin behind the chair"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "move-chair",
+    "video": "task1_move-chair_q4.mp4",
+    "duration": [
+      12,
+      20
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "When the person in black points to the white table, what is your next step?",
+    "choices": [
+      "I will push the chair up to the table and leave it where he pointed",
+      "I will take the chair and walk back to where I was originally sitting",
+      "I will sit on the chair right in the middle of the hallway",
+      "I will tell him to move the table instead"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "move-chair",
+    "video": "task1_move-chair_q5.mp4",
+    "duration": [
+      0,
+      21
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "How do the two people cooperate in this video?",
+    "choices": [
+      "The person in black leads the way and points to a location, while the person in grey pushes the chair to follow him",
+      "They both carry the chair together",
+      "The person in grey leads the way, and the person in black pushes the chair",
+      "They are fighting over who gets to sit on the chair"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "move-chair",
+    "video": "task1_move-chair_q6.mp4",
+    "duration": [
+      0,
+      21
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence best describes the overall causal logic of this event?",
+    "choices": [
+      "A person needs a chair at a specific table, so he prompts a seated person to get up, and then guides him to move the chair to the desired spot.",
+      "A person is tired of standing, so he forcefully kicks someone out of a chair and sits down.",
+      "Two people are rearranging all the furniture in the room together.",
+      "A person steals a chair from a table and hides it near the vending machine."
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "place_object",
+    "video": "task1_place_object_q0.mp4",
+    "duration": [
+      0,
+      5
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What is the recorder doing?",
+    "choices": [
+      "The recorder is holding a box in his hand and reach it to another person",
+      "The recorder is receiving a box from another person",
+      "The recorder just holds the box in his hand, and has no interaction intents",
+      "The recorder is dropping the box in his hand"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "place_object",
+    "video": "task1_place_object_q1.mp4",
+    "duration": [
+      0,
+      5
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "Which sentence best describes the recorder's mental state?",
+    "choices": [
+      "The recorder is asking for help",
+      "The recorder angry about what the other person did",
+      "The recorder is curious what is inside the box in his hand",
+      "The recorder is sad about carrying this box in his hand"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "place_object",
+    "video": "task1_place_object_q2.mp4",
+    "duration": [
+      0,
+      5.5
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "What assistance do you think the recorder may need?",
+    "choices": [
+      "Someone to put the box in his hand to another place",
+      "Someone to chat with him",
+      "Someon to help him carry the box in his hand together (since the box is very heavy)",
+      "Someone to come and listen to some specific instruction"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "place_object",
+    "video": "task1_place_object_q3.mp4",
+    "duration": [
+      0,
+      2
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Which sentence best describes the person in front of you 's mental state?",
+    "choices": [
+      "He is asking for help",
+      "He angry about what the recorder did",
+      "He is curious what is inside the box in his hand",
+      "He is sad about carrying this box in his hand"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "place_object",
+    "video": "task1_place_object_q4.mp4",
+    "duration": [
+      0,
+      2
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What is the man in front of you doing",
+    "choices": [
+      "The person is holding a box in his hand and reach it to another person",
+      "The person is receiving a box from another person",
+      "The person just holds the box in his hand, and has no interaction intents",
+      "The person is dropping the box in his hand"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "place_object",
+    "video": "task1_place_object_q5.mp4",
+    "duration": [
+      0,
+      4
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "What do you think you(the recorder) can do next?",
+    "choices": [
+      "Go and take the box, and put it to the cabinet on the right hand side",
+      "Go and take the box, and throw it to the rubbish bin",
+      "Go and carry the box with the person together, since the box is very heavy",
+      "Navigate for the person since he may lost his way"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "place_object",
+    "video": "task1_place_object_q6.mp4",
+    "duration": [
+      0,
+      3
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "What is the man on the left doing?",
+    "choices": [
+      "The man is holding a box in his hand and reach it to another person",
+      "The man is receiving a box from another person",
+      "The man just holds the box in his hand, and has no interaction intents",
+      "The man is dropping the box in his hand"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "place_object",
+    "video": "task1_place_object_q7.mp4",
+    "duration": [
+      0,
+      3
+    ],
+    "tag": [
+      "3rd",
+      "TOM"
+    ],
+    "question": "Which sentence best describes the person on the left's mental state?",
+    "choices": [
+      "The he is asking for help",
+      "The he is angry about what the recorder did",
+      "The he is curious what is inside the box in his hand",
+      "The he is sad about carrying this box in his hand"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "place_object",
+    "video": "task1_place_object_q8.mp4",
+    "duration": [
+      0,
+      13
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence best describes the two people's interaction in the video?",
+    "choices": [
+      "A person wants to put his board game box to another place, and another person help him",
+      "A person is asking another person to carry a specific board game box for him",
+      "Two people are arguing who should take the board game box",
+      "They are working together to carry the board game box to another place (since it's very heavy)"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "place_object_2",
+    "video": "task1_place_object_2_q0.mp4",
+    "duration": [
+      0,
+      5
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What gesture the recorder make, and what is the purpose of it?",
+    "choices": [
+      "The recorder is pointing to something, asking the other person to take it back to him",
+      "The recorder is waving to the other person, asking him to stop",
+      "The recorder is reaching an object to the other person",
+      "No valid gesture is seen"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "place_object_2",
+    "video": "task1_place_object_2_q1.mp4",
+    "duration": [
+      7,
+      9
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What gesture the recorder make, and what is the purpose of it?",
+    "choices": [
+      "The person is waving to another person, telling him he got the wrong object",
+      "The recorder is pointing to something, asking the other person to take it back to him",
+      "The recorder is reaching an object to the other person",
+      "No valid gesture is seen"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "place_object_2",
+    "video": "task1_place_object_2_q2.mp4",
+    "duration": [
+      7,
+      9
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "What sentence best describe the recorder's mental states?",
+    "choices": [
+      "Unsatisfied",
+      "Sad",
+      "Upset",
+      "Restless"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "place_object_2",
+    "video": "task1_place_object_2_q3.mp4",
+    "duration": [
+      0,
+      2
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What gesture the person in front of you make, and what is the purpose of it?",
+    "choices": [
+      "The person is pointing to something, asking the recorder(me) to take it back to him",
+      "The person is waving to the recorder(me), asking him to stop",
+      "The person is reaching an object to the recorder(me)",
+      "No valid gesture is seen"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "place_object_2",
+    "video": "task1_place_object_2_q4.mp4",
+    "duration": [
+      4,
+      8
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What gesture the person in front of you make, and what is the purpose of it?",
+    "choices": [
+      "The person is waving hands at first, indicating the recorder got the wrong item, and then points to another place, indicating the correct item",
+      "The person firstly points to another place, and the recorder take the item at that place, and the person waves his hand, indicating that is the wrong item",
+      "The person is nodding to the recorder, indicating he got the correct item",
+      "No valid gesture is seen"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "place_object_2",
+    "video": "task1_place_object_2_q5.mp4",
+    "duration": [
+      5,
+      7
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "What sentence best describe the person in front of the recorder's mental states?",
+    "choices": [
+      "Unsatisfied",
+      "Sad",
+      "Upset",
+      "Restless"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "place_object_2",
+    "video": "task1_place_object_2_q6.mp4",
+    "duration": [
+      0,
+      1.5
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "What do you think you need to do next",
+    "choices": [
+      "Looking into the place where the person in front of you is pointing at, and get an item there to the person",
+      "Move away from the person in front of you, you are on his way",
+      "Go to the person in front of you, and talk to him",
+      "You should stand still since no one is asking you to do anything"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "place_object_2",
+    "video": "task1_place_object_2_q7.mp4",
+    "duration": [
+      4,
+      7
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "What do you think you need to do next",
+    "choices": [
+      "Put the box back to the cabinate, and take the other box since the first box is not what the person in front of me want",
+      "Give the box to the person in front of me",
+      "Carry the box in my hands, and follow the person in front of me",
+      "Put the box back to the cabinate and wait for the next instruction"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "place_object_2",
+    "video": "task1_place_object_2_q8.mp4",
+    "duration": [
+      0,
+      3
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "What is the man on the left doing?",
+    "choices": [
+      "The man is holding a box in his hand and reach it to another person",
+      "The man is receiving a box from another person",
+      "The man just holds the box in his hand, and has no interaction intents",
+      "The man is dropping the box in his hand"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "place_object_2",
+    "video": "task1_place_object_2_q9.mp4",
+    "duration": [
+      0,
+      3
+    ],
+    "tag": [
+      "3rd",
+      "TOM"
+    ],
+    "question": "Which sentence best describes the person on the left's mental state?",
+    "choices": [
+      "The he is asking for help",
+      "The he is angry about what the recorder did",
+      "The he is curious what is inside the box in his hand",
+      "The he is sad about carrying this box in his hand"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "place_object_2",
+    "video": "task1_place_object_2_q10.mp4",
+    "duration": [
+      0,
+      16
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence best describes the scene?",
+    "choices": [
+      "The person on the left hand side is asking another person to retrive something, and the other person got the wrong item at first, and the person on the left hand side correct him, and finally the other person get the correct item for the person on the left hand side",
+      "The person on the left hand side is asking another person to retrive something, and the other person immediately get the correct item",
+      "The person on the left hand side is asking another person to put something in his hand to a specific place, and the other person got the wrong place at first, and then the person on the left hand side correct him",
+      "The person on the left hand side first wave hands to greet another person, and ask him to put something to a specific place, and the other person got the wrong place at first, and the person on the left hand side corrected him in the end"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "social_norms_follow",
+    "video": "task1_social_norms_follow_q0.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What is the recorder doing?",
+    "choices": [
+      "The recorder is going downstairs",
+      "The recorder is going upstairs",
+      "The recorder is standing still and waiting for other people",
+      "The recorder is carrying an object and stand still"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "social_norms_follow",
+    "video": "task1_social_norms_follow_q1.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "Why does the person in front of you standing still?",
+    "choices": [
+      "He is giving a way to you",
+      "He is carrying a very heavy object so he is having rests",
+      "He is waiting for you to come to him",
+      "He is waiting for you since he is leading your way"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "social_norms_follow",
+    "video": "task1_social_norms_follow_q2.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Which sentence best describes the recorder's mental state when he is standing still?",
+    "choices": [
+      "I need to go to the stairs, but a person is also walking downstairs, I need to wait to avoid potential collision",
+      "I need to talk with the person in front of me, but he is walking on the stairs, so I need to follow him",
+      "The person is busy working on his task, I need to leave this room to avoid bothering him",
+      "The person in front of me is instructing me to do something, I am standing and listening carefully to him"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "social_norms_follow",
+    "video": "task1_social_norms_follow_q3.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What is the person in front of you doing?",
+    "choices": [
+      "The person is going downstairs",
+      "The person is going upstairs",
+      "The person is standing still and waiting for other people",
+      "The person is carrying an object and stand still"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "social_norms_follow",
+    "video": "task1_social_norms_follow_q4.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "What should you do in the end of the video clip",
+    "choices": [
+      "Go downstairs, follow the person",
+      "Go upstairs, after the person is going down",
+      "Notify the person and give him something",
+      "Wait for the person's further instruction"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "social_norms_follow",
+    "video": "task1_social_norms_follow_q5.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "What is the person in black",
+    "choices": [
+      "The person is going downstairs",
+      "The person is going upstairs",
+      "The person is standing still and waiting for other people",
+      "The person is carrying an object and stand still"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "social_norms_follow",
+    "video": "task1_social_norms_follow_q6.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "3rd",
+      "TOM"
+    ],
+    "question": "Which sentence best describes the person in the left hand side in white's mental state when he is standing still?",
+    "choices": [
+      "I need to go to the stairs, but a person is also walking downstairs, I need to wait to avoid potential collision",
+      "I need to talk with the person in front of me, but he is walking on the stairs, so I need to follow him",
+      "The other person is busy working on his task, I need to leave this room to avoid bothering him",
+      "The other person in front of me is instructing me to do something, I am standing and listening carefully to him"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "social_norms_follow",
+    "video": "task1_social_norms_follow_q7.mp4",
+    "duration": [
+      0,
+      18
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence best describes the interaction in the video?",
+    "choices": [
+      "The person in black wants to go downstairs, and the person in white also wants to, but the stairs are very narrow, so he first waits still until the person in black go downstairs, and then he goes",
+      "The person in black wants to go upstairs, and the person in white also wants to, but the stairs are very narrow, so he first waits still until the person in black go upstairs, and then he goes",
+      "The person in black wants the person in white to follow him, but the stairs are very narrow, so the person in white waits until the person in black going downstairs, and then follow him",
+      "Two people in the scene wants to chat with each other, but the staircase is too narrow, so they decide to go downstairs together to find a place to chat"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "tidy_billard",
+    "video": "task1_tidy_billard_q0.mp4",
+    "duration": [
+      8,
+      14
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What is the recorder doing?",
+    "choices": [
+      "The recorder is racking the billard balls",
+      "The recorder is trying to take balls from the holes",
+      "The recorder is looking for a missed ball",
+      "The recorder is teaching another person how to play billard"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "tidy_billard",
+    "video": "task1_tidy_billard_q1.mp4",
+    "duration": [
+      5,
+      9
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "What assistance do you think the recorder needs while racking the balls?",
+    "choices": [
+      "Someone to take balls in the holes out",
+      "Someone to help him rack the balls together",
+      "No further assistance since more people may bother the recorder's working focus",
+      "Someone to help him fixed the rack"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "tidy_billard",
+    "video": "task1_tidy_billard_q2.mp4",
+    "duration": [
+      4,
+      6
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Which word best describes the person's mental state in front of you?",
+    "choices": [
+      "Busy",
+      "Distracted",
+      "Indifferent",
+      "Restless"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "tidy_billard",
+    "video": "task1_tidy_billard_q3.mp4",
+    "duration": [
+      2,
+      6
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What is the person in front of you doing?",
+    "choices": [
+      "The person is racking the billard balls",
+      "The person is trying to take balls from the holes",
+      "The person is looking for a missed ball",
+      "The person is teaching another person how to play billard"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "tidy_billard",
+    "video": "task1_tidy_billard_q4.mp4",
+    "duration": [
+      4,
+      6
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "What do you think you can do next step",
+    "choices": [
+      "I need to take balls in the holes out and give them to the person in white in front of me, so it can help him racking the ball more efficiently",
+      "I need to help the person in front of the me rack the balls directly",
+      "I need to wait until the person in front of me finish racking the balls, so I can play billards",
+      "I need to stand still and hold the balls on the table for the other person, and give balls to him when he needs"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "tidy_billard",
+    "video": "task1_tidy_billard_q5.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "What is the person in white in the right hand side doing?",
+    "choices": [
+      "They are focused talking to each other",
+      "They are doing their own things without any interaction",
+      "They are finding something together",
+      "They are calling the recorder to join their discussion"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "tidy_billard",
+    "video": "task1_tidy_billard_q6.mp4",
+    "duration": [
+      0,
+      5
+    ],
+    "tag": [
+      "3rd",
+      "TOM"
+    ],
+    "question": "Which word best describes the person in white in the right hand side",
+    "choices": [
+      "Busy",
+      "Distracted",
+      "Indifferent",
+      "Restless"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "tidy_billard",
+    "video": "task1_tidy_billard_q7.mp4",
+    "duration": [
+      8,
+      15
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "What is the man in black standing in the middle left doing?",
+    "choices": [
+      "He is taking balls in the holes out and put them on the table",
+      "He is putting balls on the table into the holes",
+      "He is directly helping the other person racking the balls",
+      "He is holding the rack on the table for the other person"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "tidy_billard",
+    "video": "task1_tidy_billard_q8.mp4",
+    "duration": [
+      0,
+      28
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence do you think best describes the scene in the video",
+    "choices": [
+      "The person in white is racking the billard balls, but some balls are in the holes, so the person in black help him take them out and put it on the table",
+      "The person in white is racking the billard balls, and the person in black is standing still and wait for him finishing, so they can play billards",
+      "The person in white is taking billard balls out from the rack, and put them on the table, and the person in black is taking balls out from the hole",
+      "They are racking the balls together="
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "tidy_table",
+    "video": "task1_tidy_table_q0.mp4",
+    "duration": [
+      0,
+      4
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What is the recorder doing?",
+    "choices": [
+      "He wants to play table tennis with his friend",
+      "He walks to his friend and wants to chat with him",
+      "He is asked to clean the table tennis table",
+      "He is trying to move the table tennis table to some other place"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "tidy_table",
+    "video": "task1_tidy_table_q1.mp4",
+    "duration": [
+      0,
+      4
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "Which sentence best describes the recorder's mental state?",
+    "choices": [
+      "I am excited to playing the table tennis, but there are still some objects on the table that stops me playing with my friend",
+      "I am very pleased and ready to play",
+      "I am restless because I dont know how to play table tennis",
+      "I am very nervous because this is a table tennis match and I need to win"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "tidy_table",
+    "video": "task1_tidy_table_q2.mp4",
+    "duration": [
+      0,
+      8
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "Why not the recorder start playing table tennis?",
+    "choices": [
+      "He notice there are some objects on the table stopping them to play",
+      "He is waiting for other people to join",
+      "He is talking with his opponent",
+      "He is planning his strategy before playing"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "tidy_table",
+    "video": "task1_tidy_table_q3.mp4",
+    "duration": [
+      0,
+      9
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What is the recorder doing?",
+    "choices": [
+      "He wants to play table tennis with his friend",
+      "He walks to his friend and wants to chat with him",
+      "He is asked to clean the table tennis table",
+      "He is trying to move the table tennis table to some other place"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "tidy_table",
+    "video": "task1_tidy_table_q4.mp4",
+    "duration": [
+      0,
+      9
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "Which sentence best describes the recorder's mental state?",
+    "choices": [
+      "I am excited to playing the table tennis, but there are still some objects on the table that stops me playing with my friend",
+      "I am very pleased and ready to play",
+      "I am restless because I dont know how to play table tennis",
+      "I am very nervous because this is a table tennis match and I need to win"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "tidy_table",
+    "video": "task1_tidy_table_q5.mp4",
+    "duration": [
+      0,
+      12
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Which word best describes the people who coming to the table tennis table's mental state?",
+    "choices": [
+      "Excited: They are playing table tennis",
+      "Impatient: They want to play the table tennis, but there are some items on the board",
+      "Indifferent: They dont know each other, but they have to play together",
+      "Restless: They dont know how to play"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "tidy_table",
+    "video": "task1_tidy_table_q6.mp4",
+    "duration": [
+      0,
+      7
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What do the two people standing next to the table want to do?",
+    "choices": [
+      "They want to play table tennis together",
+      "They are asking the recorder(you) to join him",
+      "They want to move the table tennis table to somewhere else",
+      "They want to talk to each other"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "tidy_table",
+    "video": "task1_tidy_table_q7.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "What do you think you need to do next step?",
+    "choices": [
+      "I need to collect all the items on the board, so that the other two people can play the table tennis",
+      "I need to join them playing the table tennis",
+      "I need to leave this room because they are engaged an table tennis game",
+      "I need to stand aside to see if they need any assistance"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "tidy_table",
+    "video": "task1_tidy_table_q8.mp4",
+    "duration": [
+      0,
+      7
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "What do the two people standing next to the table want to do?",
+    "choices": [
+      "They want to play table tennis together",
+      "They are asking the recorder(you) to join him",
+      "They want to move the table tennis table to somewhere else",
+      "They want to talk to each other"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "tidy_table",
+    "video": "task1_tidy_table_q9.mp4",
+    "duration": [
+      0,
+      8
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "Why dont the two people standing next to the table directly start to play table tennis?",
+    "choices": [
+      "There are some items on the table stop them to do so",
+      "They want to chat with each other for a while before playing",
+      "The third person (the person in white in the middle) blocks their way",
+      "They are waiting for their friends to join them"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "tidy_table",
+    "video": "task1_tidy_table_q10.mp4",
+    "duration": [
+      0,
+      9
+    ],
+    "tag": [
+      "3rd",
+      "TOM"
+    ],
+    "question": "What is the mental states of the two people standing next to the table with a racket in their hands?",
+    "choices": [
+      "Excited: They are playing table tennis",
+      "Impatient: They want to play the table tennis, but there are some items on the board",
+      "Indifferent: They dont know each other, but they have to play together",
+      "Restless: They dont know how to play"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task1",
+    "scenario": "tidy_table",
+    "video": "task1_tidy_table_q11.mp4",
+    "duration": [
+      0,
+      16
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence best describes the scene in the video?",
+    "choices": [
+      "Two people wants to play table tennis, but they see some objects on the table stopping them playing, and another person actively help them remove the objects on the table",
+      "Two people wants to play table tennis, when they stop by a table tennis table, they started to play directly, and a third person is cheering for them",
+      "Two people wants to play table tennis, and another person talk to them and say he also wants to join, so in the end three people are playing together",
+      "Two people wants to play table tennis, but they notice that the table is broken, so they leave the room"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "agent-agent-heavy-table",
+    "video": "task2_agent-agent-heavy-table_q0.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What is your initial action in the room?",
+    "choices": [
+      "I look at a white table and points to it",
+      "I ask the others to leave the room",
+      "I start moving the table by myself",
+      "I walk to  the hallway"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "agent-agent-heavy-table",
+    "video": "task2_agent-agent-heavy-table_q1.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What do you think the person in grey jacket in front of you want you to do?",
+    "choices": [
+      "He wants to move the table",
+      "He wants you to leave the room immediately",
+      "He wants you to come closer to him",
+      "He wants you to do nothing"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "agent-agent-heavy-table",
+    "video": "task2_agent-agent-heavy-table_q2.mp4",
+    "duration": [
+      0,
+      7
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "What do you think you need to do next?",
+    "choices": [
+      "Move the white table in front of me",
+      "Leave the room immediately",
+      "Walk to the person in front of me and talk to him",
+      "Stnad still and wait the person in front of me to come to me"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "agent-agent-heavy-table",
+    "video": "task2_agent-agent-heavy-table_q3.mp4",
+    "duration": [
+      0,
+      14
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What happens after you approach the table to fulfill the human's request?",
+    "choices": [
+      "I grab the table but realize I need assistance, so I turn and ask the person next to me to help",
+      "I easily pick up the table with one hand and walk over",
+      "I push the table, but it breaks in half",
+      "I refuse to touch the table and walk away"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "agent-agent-heavy-table",
+    "video": "task2_agent-agent-heavy-table_q4.mp4",
+    "duration": [
+      0,
+      13
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Which sentence below best describe you (the recorder's) mental state?",
+    "choices": [
+      "The table is too heavy to move, I need to find some one to assist me",
+      "I need to try again to move the chair",
+      "I already finished my task about the table, and now I need to notify the commander",
+      "I need to pull a chair next to the table"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "agent-agent-heavy-table",
+    "video": "task2_agent-agent-heavy-table_q5.mp4",
+    "duration": [
+      5,
+      10
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What is the person in the black jacket(on the right) doing before he speaks to you?",
+    "choices": [
+      "He tries to move the table but stops, indicating he is struggling or cannot do it alone",
+      "He is running around the table in circles",
+      "He is successfully carrying the table towards the human",
+      "He is sitting on the table"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "agent-agent-heavy-table",
+    "video": "task2_agent-agent-heavy-table_q6.mp4",
+    "duration": [
+      6,
+      13
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Why does he ask you to help him?",
+    "choices": [
+      "Because he hit a physical capability limit and needs my available physical resource to complete the assigned task",
+      "Because he wants to play a game with me",
+      "Because the human specifically told him to ask me",
+      "Because he wants to show me how heavy the table is"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "agent-agent-heavy-table",
+    "video": "task2_agent-agent-heavy-table_q7.mp4",
+    "duration": [
+      6,
+      13
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "After agreeing to help him, what is your next physical action?",
+    "choices": [
+      "I walk over, grab the opposite side of the table, and cooperatively move it with him",
+      "I walk over and push him out of the way to do it myself",
+      "I stand there and cheer him on without touching the table",
+      "I walk over and sit on the table"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "agent-agent-heavy-table",
+    "video": "task2_agent-agent-heavy-table_q8.mp4",
+    "duration": [
+      0,
+      23
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "How is the task of moving the table ultimately executed?",
+    "choices": [
+      "The task starts with one person, who then actively recruits a second person to collaboratively carry it to the destination",
+      "One person drags the table all by himself while the other watches",
+      "The human who made the request ends up moving it himself",
+      "The two people push the table in opposite directions"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "agent-agent-heavy-table",
+    "video": "task2_agent-agent-heavy-table_q9.mp4",
+    "duration": [
+      0,
+      23
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence best describes the overall causal logic of this event?",
+    "choices": [
+      "An agent accepts a relocation task, recognizes it exceeds his single-agent physical capacity, and dynamically recruits an idle peer to form a successful collaborative effort.",
+      "An agent tries to move a table, gives up because he is lazy, and forces someone else to do the entire job.",
+      "Two agents are arguing over who has to move the table, and eventually both are forced to do it together.",
+      "The human assigns a task to two people simultaneously, and they immediately move it together without speaking."
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "agent-agent-papercup",
+    "video": "task2_agent-agent-papercup_q0.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What is your main action at the beginning of the video?",
+    "choices": [
+      "I am giving some commands to the two people in front of me",
+      "I am handing a paper cup to the people in front of me",
+      "I am asking them where the restroom is",
+      "I  waiting for commands from the other people in front of me "
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "agent-agent-papercup",
+    "video": "task2_agent-agent-papercup_q1.mp4",
+    "duration": [
+      0,
+      9
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Suppose the person in front of you ask you to find him a paper cup, Why do you immediately turn to the person next to you and relay the request?",
+    "choices": [
+      "Because I lack the spatial knowledge of where the cups are kept, so I must collaborate with another agent to fulfill the user's need",
+      "Because I want to test if the person next to me is listening",
+      "Because I am not allowed to open the cabinets",
+      "Because I want to introduce the human to my friend"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "agent-agent-papercup",
+    "video": "task2_agent-agent-papercup_q2.mp4",
+    "duration": [
+      0,
+      18
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "After successfully receiving the paper cup from your peer, what is your next step?",
+    "choices": [
+      "I will turn around and hand the cup to the human who originally requested it",
+      "I will use the cup to drink some water myself",
+      "I will put the cup back into the cabinet",
+      "I will throw the cup into the trash can"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "agent-agent-papercup",
+    "video": "task2_agent-agent-papercup_q3.mp4",
+    "duration": [
+      0,
+      11
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "Who directly makes the request to you for the paper cup?",
+    "choices": [
+      "The person in the black sweater standing next to me, who is relaying the request from the human",
+      "The human in the grey jacket asks me directly",
+      "Both of them are asking me",
+      "No one asks me; I just decide to get a cup"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "agent-agent-papercup",
+    "video": "task2_agent-agent-papercup_q4.mp4",
+    "duration": [
+      0,
+      8
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What does the person on the right hand side want you to do for him?",
+    "choices": [
+      "He did not assign me anything, he is asking the other",
+      "He asks me to move the white table",
+      "He asks me to buy a drink from the vending machine",
+      "He asks me to take his black jacket"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "agent-agent-papercup",
+    "video": "task2_agent-agent-papercup_q5.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "Suppose your peer is asking you to find a paper cup, What is your action to fulfill the request made by your peer?",
+    "choices": [
+      "I will open the cabinet and find the paper cup for him",
+      "I point to the cabinet and tell him to get it himself",
+      "I walk out of the room to find a cup",
+      "I give him a plastic water bottle instead"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "agent-agent-papercup",
+    "video": "task2_agent-agent-papercup_q6.mp4",
+    "duration": [
+      0,
+      18
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "How is the paper cup retrieved and delivered to the human?",
+    "choices": [
+      "The human asks the middle person, who asks the person near the cabinet; the latter retrieves the cup and passes it back through the middle person",
+      "The human walks to the cabinet and gets the cup himself while the other two watch",
+      "The middle person gets the cup from the cabinet and gives it to the human",
+      "The person near the cabinet throws the cup directly to the human"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "agent-agent-papercup",
+    "video": "task2_agent-agent-papercup_q7.mp4",
+    "duration": [
+      0,
+      18
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence best describes the overall causal logic of this event?",
+    "choices": [
+      "A human requests an item from an agent who lacks the knowledge to find it, prompting agent-to-agent collaboration where a second agent retrieves the item and passes it back.",
+      "Three people are playing a game where they must pass a cup down a line without dropping it.",
+      "A human tries to ask for a cup, but the first person ignores him, so he has to ask the second person.",
+      "The person by the cabinet wants to give the human a gift, so he uses the middle person as a messenger."
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_fill_water",
+    "video": "task2_help_fill_water_q0.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What does the recorder want to do?",
+    "choices": [
+      "He wants to fill his water bottle up",
+      "He wants to empty his water bottle",
+      "He wants to find another water bottle",
+      "He wants to put his water bottle to another place"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_fill_water",
+    "video": "task2_help_fill_water_q1.mp4",
+    "duration": [
+      0,
+      4
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "What is the intent of the recorder's hand movement with a bottle?",
+    "choices": [
+      "He is giving his bottle to some other person, may want to fill the bottle with water",
+      "He is taking a bottle from another person, may be he is very thirsty",
+      "He is showing an empty bottle to another person",
+      "He is doing nothing with the bottle"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_fill_water",
+    "video": "task2_help_fill_water_q2.mp4",
+    "duration": [
+      0,
+      4
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Which sentence best describe the person in front of you(with a bottle in his hand) ?",
+    "choices": [
+      "Need help: He is asking you(recorder) to help him do something with the bottle",
+      "Sharing: He is share the water bottle to you so that you can drink it",
+      "Sad: He does not like the taste of that drink, so he is asking you to change another bottle for him",
+      "Thankful: He is appreciating you bring him a bottle of water "
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_fill_water",
+    "video": "task2_help_fill_water_q3.mp4",
+    "duration": [
+      0,
+      4
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What does the person in front of you doing?",
+    "choices": [
+      "He is giving his bottle to me, may want to fill the bottle with water",
+      "He is taking a bottle from me, may be he is very thirsty",
+      "He is showing an empty bottle to me",
+      "He is doing nothing with the bottle"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_fill_water",
+    "video": "task2_help_fill_water_q4.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "What do you think you need to do next step?",
+    "choices": [
+      "I will give the bottle to the person in white, and ask him to fill some water to it (since the person in white is standing in a kitchen, he know where to fill water",
+      "I will go and fill the water bottle on my own, since I know where to fill the bottle",
+      "I will put the bottle to the cabinet",
+      "I will share the bottle of water to the person in white, since he is very thirsty"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_fill_water",
+    "video": "task2_help_fill_water_q5.mp4",
+    "duration": [
+      0,
+      20
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "What do you think you need to do next step?",
+    "choices": [
+      "I will carry the bottle and take it back to the person in black",
+      "I will take the bottle and drink it, since I am so thirsty",
+      "I will take the bottle, and put it to somewhere in the cabinet",
+      "I will hold this bottle and stand still, until someone need it"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_fill_water",
+    "video": "task2_help_fill_water_q6.mp4",
+    "duration": [
+      6,
+      8
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What does the person in front of you doing?",
+    "choices": [
+      "He is giving his bottle to me, may want to fill the bottle with water",
+      "He is taking a bottle from me, may be he is very thirsty",
+      "He is showing an empty bottle to me",
+      "He is doing nothing with the bottle"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_fill_water",
+    "video": "task2_help_fill_water_q7.mp4",
+    "duration": [
+      6,
+      10
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "What do you think the recorder should do next?",
+    "choices": [
+      "He should fill the bottle up with water",
+      "He needs to put the bottle somewhere in the table",
+      "He should keep the bottle with him until someone need it",
+      "He should give the bottle back to the other person, since it's not his bottle"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_fill_water",
+    "video": "task2_help_fill_water_q8.mp4",
+    "duration": [
+      0,
+      7
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "What do the two people standing next to the table want to do?",
+    "choices": [
+      "They want to play table tennis together",
+      "They are asking the recorder(you) to join him",
+      "They want to move the table tennis table to somewhere else",
+      "They want to talk to each other"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_fill_water",
+    "video": "task2_help_fill_water_q9.mp4",
+    "duration": [
+      0,
+      23
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "How many people are involved to help the person in black fill his bottle up",
+    "choices": [
+      "Two",
+      "One",
+      "He fills it by himself",
+      "The person in black does not want to fill his bottle up"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_fill_water",
+    "video": "task2_help_fill_water_q10.mp4",
+    "duration": [
+      0,
+      23
+    ],
+    "tag": [
+      "3rd",
+      "TOM"
+    ],
+    "question": "Why does the person in the middle not directly fill the bottle up for the person in black, instead of asking another person to do so?",
+    "choices": [
+      "He does not know where to fill the water, but another person standing next to the kitchen may know",
+      "He is lazy to do so",
+      "Because the person in black ask him to find other person for help",
+      "Because he cannot open the bottle, so he finds another person for help"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_fill_water",
+    "video": "task2_help_fill_water_q11.mp4",
+    "duration": [
+      0,
+      23
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence best describes the scene in the video?",
+    "choices": [
+      "The person in black (in the left) wants to fill up his bottle, so he pass the bottle to the person in middle, the person in middle wants to help him, but he does not know where to fill it up, so he pass the bottle to another person near the kitchen, and he finally fill up the bottle, and pass it back to the person in black",
+      "The person in black (in the left) wants to empty his bottle, so he pass the bottle to the person in middle, the person in middle wants to help him, but he does not know where to empty it, so he pass the bottle to another person near the kitchen, and he finally empty the bottle, and pass it back to the person in black",
+      "The person in black wants to find a place to put his bottle, so he pass his bottle to the person in the middle, but the person in the middle does not know where to put, so then he pass it to another person to help him find a place to put",
+      "The person in black notice that the other two people are all very thirsty, so he then share the bottle to one of them"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_move",
+    "video": "task2_help_move_q0.mp4",
+    "duration": [
+      0,
+      3
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What is the intent of the recorder's gesture?",
+    "choices": [
+      "He wants to move the red object to another place far away",
+      "He wants to move the red object near to him",
+      "He wants to play with the red object(a toy)",
+      "There is no explicit gesture shown"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_move",
+    "video": "task2_help_move_q1.mp4",
+    "duration": [
+      0,
+      2
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What is the intent of the person in front of you's hand movement with a bottle?",
+    "choices": [
+      "He is giving you commands to move something to another place",
+      "He is asking you to come closer to him",
+      "He is asking you to leave",
+      "He is asking you to take some item to him"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_move",
+    "video": "task2_help_move_q2.mp4",
+    "duration": [
+      0,
+      7
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Which sentence best describe the recorder's mental state when he is trying to carrying the red toy?",
+    "choices": [
+      "Exhausted: The object is too heavy and he failed to pull it up",
+      "Pleased: He is happy carrying the red object",
+      "Curious: He does not know how to move the object",
+      "Hesitant: He is not sure if he should move the red toy"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_move",
+    "video": "task2_help_move_q3.mp4",
+    "duration": [
+      0,
+      7
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "What do you think the recorder should do next?",
+    "choices": [
+      "He should ask the other person (the person in white) to help him move the red object",
+      "He should keep trying moving the red object independently",
+      "He should ask the person in black again to clarify where the red object should be put to",
+      "He should stop and talking to the person in black that he cannot move it"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_move",
+    "video": "task2_help_move_q4.mp4",
+    "duration": [
+      3,
+      6
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Which sentence best describe the person in front of you, in white's mental state when he is trying to carrying the red toy?",
+    "choices": [
+      "Exhausted: The object is too heavy and he failed to pull it up",
+      "Pleased: He is happy carrying the red object",
+      "Curious: He does not know how to move the object",
+      "Hesitant: He is not sure if he should move the red toy"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_move",
+    "video": "task2_help_move_q5.mp4",
+    "duration": [
+      3,
+      7
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What is the intent of the gesture made by the person in white?",
+    "choices": [
+      "He is asking you (the recorder) to help him move the red object",
+      "He is asking you to leave since you are on his way",
+      "He is asking you to come to him since he wants to talk with you",
+      "He wants you to stand still and do not move"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_move",
+    "video": "task2_help_move_q6.mp4",
+    "duration": [
+      3,
+      7
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "What do you think you(recorder) should do next?",
+    "choices": [
+      "I need to go and help the person in white move the heavy red object",
+      "I need to leave immediately since I am on the way of the person in white",
+      "I need to find something for the person in white",
+      "I need to stand in my place to listen to further instructions"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_move",
+    "video": "task2_help_move_q7.mp4",
+    "duration": [
+      0,
+      7
+    ],
+    "tag": [
+      "3rd",
+      "TOM"
+    ],
+    "question": "Why do you think the person in white stop to move the red object?",
+    "choices": [
+      "The object is too heavy for him to move",
+      "He is lazy and does not want to move it",
+      "He wants to confirm with the person in black where should he put the red object to",
+      "He is tired and want to have a short rest before moving it"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_move",
+    "video": "task2_help_move_q8.mp4",
+    "duration": [
+      0,
+      18
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "How many people are involved to help the person in black move the red object",
+    "choices": [
+      "Two",
+      "One",
+      "He moves it by himself",
+      "Three"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_move",
+    "video": "task2_help_move_q9.mp4",
+    "duration": [
+      0,
+      18
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence best describes the scene in the video?",
+    "choices": [
+      "The person in black want to relocate a red toy, so he asks another person to help him, but the object is too heavy, the person then asks the third person to help him move, and in the end, two people working together moving the object to the desired place",
+      "The person in black want to relocate a red toy, so he asks another perosn for help, and the person move the object independently to the desired place",
+      "The person in black want to move a red toy to another place, so he ask one of his friend for help, but he does not indicate the desired position, so his friend ask him again to clarify the place, and in the end, they move it to the desired place",
+      "The person in black want to play the red toy, so he ask his friends to move it closer to him, and the two other people work together to move the red toy close to the person in black"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_nav",
+    "video": "task2_help_nav_q0.mp4",
+    "duration": [
+      0,
+      14
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What is the recorder doing?",
+    "choices": [
+      "He is sitting and waiting for his package (yellow objects)",
+      "He is waiting for his friends",
+      "He is having a phone conversation",
+      "He is doing exercise in the room"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_nav",
+    "video": "task2_help_nav_q1.mp4",
+    "duration": [
+      0,
+      8
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What does the person in beige do when you approach him?",
+    "choices": [
+      "He points his hand towards the person sitting down",
+      "He takes the yellow object from my hands",
+      "He tells me to turn around and go back",
+      "He ignores me and walks away"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_nav",
+    "video": "task2_help_nav_q2.mp4",
+    "duration": [
+      0,
+      9
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "Why does the recorder walking towards the person in white in the middle?",
+    "choices": [
+      "He probably doesn't know who to give the object to, so he asks the person in beige for directions",
+      "He wants to give the object to the person in beige, but gets rejected",
+      "He is just wandering around aimlessly",
+      "He wants to show off his yellow object to everyone in the room"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_nav",
+    "video": "task2_help_nav_q3.mp4",
+    "duration": [
+      0,
+      8
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "What is the intent of the beige-clothed person's pointing gesture?",
+    "choices": [
+      "He is directing me to the person sitting down, indicating that is who I should give the object to",
+      "He is showing me a nice picture on the wall",
+      "He is telling me to leave the room",
+      "He is just stretching his arm"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_nav",
+    "video": "task2_help_nav_q4.mp4",
+    "duration": [
+      0,
+      9
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "After seeing the pointing gesture, what do you think you need to do next step?",
+    "choices": [
+      "I will follow the direction, walk towards the person sitting down, and hand him the yellow object",
+      "I will give the yellow object to the person in beige",
+      "I will put the yellow object on the floor",
+      "I will sit down next to the person in beige"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_nav",
+    "video": "task2_help_nav_q5.mp4",
+    "duration": [
+      0,
+      7
+    ],
+    "tag": [
+      "robot2",
+      "observe"
+    ],
+    "question": "What is the person in black doing at the beginning?",
+    "choices": [
+      "He is holding a yellow object and walking towards me, seemingly looking for someone",
+      "He is running towards me to attack me",
+      "He is trying to hide the yellow object from me",
+      "He is playing with a yellow toy"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_nav",
+    "video": "task2_help_nav_q6.mp4",
+    "duration": [
+      0,
+      8
+    ],
+    "tag": [
+      "robot2",
+      "action"
+    ],
+    "question": "What do you think the recorder should do to help the person in black navigate?",
+    "choices": [
+      "He should point to the person sitting on the chair to show him where to go",
+      "He should take the yellow object and keep it",
+      "He should tell the person in black to throw it away",
+      "He should do nothing and just stand there"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_nav",
+    "video": "task2_help_nav_q7.mp4",
+    "duration": [
+      0,
+      20
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "How many people are involved in the process of delivering this yellow object?",
+    "choices": [
+      "Two: one person delivering, and another person help him navigate",
+      "Three: one person delivering, and two people help him navigate",
+      "One: the person in black independently find his way",
+      "Three: two people carring the object together, and one other person help them navigate"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_nav",
+    "video": "task2_help_nav_q8.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "3rd",
+      "TOM"
+    ],
+    "question": "Why does the person in black walk to the person in beige first, instead of going directly to the person sitting down?",
+    "choices": [
+      "He probably doesn't know who to give the object to, so he asks the person in beige for directions",
+      "He wants to give the object to the person in beige, but gets rejected",
+      "He is just wandering around aimlessly",
+      "He wants to show off his yellow object to everyone in the room"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_nav",
+    "video": "task2_help_nav_q9.mp4",
+    "duration": [
+      0,
+      14
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence best describes the overall event happening in the video?",
+    "choices": [
+      "The person in black needs to deliver a yellow object but doesn't know to whom, so he asks the person in beige, who points him to the person sitting down, and he successfully hands it over.",
+      "The person in black wants to play a game with the yellow object, so he invites the other two people to join him.",
+      "The person in black took the yellow object from the person in beige, and is now handing it to the person sitting down.",
+      "The three people are doing a relay race, passing the yellow object from one person to another."
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_open_door",
+    "video": "task2_help_open_door_q0.mp4",
+    "duration": [
+      0,
+      3
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What is the recorder doing?",
+    "choices": [
+      "He is giving a box to the person in black",
+      "He is getting a box from the person in black",
+      "He is carrying a box and stand still",
+      "He is carrying a box together with another person"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_open_door",
+    "video": "task2_help_open_door_q1.mp4",
+    "duration": [
+      0,
+      5
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What happens at the beginning of the video?",
+    "choices": [
+      "The person in white hands me a large box and asks me to put it away",
+      "The person in beige opens the door for me",
+      "I put a large box on the floor",
+      "I ask the person in white for a box"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_open_door",
+    "video": "task2_help_open_door_q2.mp4",
+    "duration": [
+      5,
+      11
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Why do you ask the person in beige for help instead of opening the door yourself?",
+    "choices": [
+      "Because my hands are full carrying the box, making it physically difficult to operate the door handle",
+      "Because I want to be polite and greet him",
+      "Because I want him to hold the box for me",
+      "Because I am lost and need to ask for directions"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_open_door",
+    "video": "task2_help_open_door_q3.mp4",
+    "duration": [
+      0,
+      8
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "What is your next step if you want to open the door?",
+    "choices": [
+      "I will ask another person to help me open the door",
+      "I will put the box on the floor, and then open it on my own",
+      "I will open the door on my own with the big box in my hand",
+      "I will stand still and wait for other people open the door for me"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_open_door",
+    "video": "task2_help_open_door_q4.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "robot2",
+      "observe"
+    ],
+    "question": "What is the person in black doing?",
+    "choices": [
+      "He is taking a big box from another person, and try to go to the door",
+      "He is giving a big box to another person, and try to leave from the door",
+      "He is asking another person to follow him when he goes to the door",
+      "The other person is asking him to leave, so he goes to the door"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_open_door",
+    "video": "task2_help_open_door_q5.mp4",
+    "duration": [
+      0,
+      8
+    ],
+    "tag": [
+      "robot2",
+      "TOM"
+    ],
+    "question": "Which sentence best describes the person in black",
+    "choices": [
+      "He uses his two hands to carry a big box, and also wants to open the door, he wants me to help him",
+      "He is very chilling while carrying a big box, he is very confident he can open the door and finish the task",
+      "He is very tired carrying the box, so he want me to help him carry it",
+      "He is asking me to leave because I block his way"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_open_door",
+    "video": "task2_help_open_door_q6.mp4",
+    "duration": [
+      0,
+      8
+    ],
+    "tag": [
+      "robot2",
+      "action"
+    ],
+    "question": "What should the recorder do next?",
+    "choices": [
+      "He needs to open the door for the person in black",
+      "He needs to carry the big box from the person in black's hands",
+      "He needs to leave this room becasue he blocks the person in black's way",
+      "He needs to stand still to listen to further instructions"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_open_door",
+    "video": "task2_help_open_door_q7.mp4",
+    "duration": [
+      5,
+      10
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Why does the person in black ask you to open the door?",
+    "choices": [
+      "Because his hands are occupied with the large box and he cannot easily open it himself",
+      "Because he doesn't know how to use the door handle",
+      "Because he wants to test if I am willing to help him",
+      "Because the door is locked and only I have the key"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_open_door",
+    "video": "task2_help_open_door_q8.mp4",
+    "duration": [
+      0,
+      18
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "How many people are involved in the entire sequence of events, and what do they do?",
+    "choices": [
+      "Three: one gives the box, one carries the box, and one opens the door",
+      "Two: one carries the box and one opens the door",
+      "Three: all of them take turns carrying the box",
+      "Two: one gives the box and one carries it"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "help_open_door",
+    "video": "task2_help_open_door_q9.mp4",
+    "duration": [
+      0,
+      18
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence best describes the overall causal logic of this event?",
+    "choices": [
+      "The person in black needs to put a box away, but because his hands are occupied, he successfully asks the person in beige to assist him by opening the door.",
+      "The person in black doesn't know how to open the door, so the person in beige teaches him.",
+      "The person in white forces the person in black to carry the box outside, and the person in beige tries to stop them.",
+      "The three people are working together to move a very heavy door."
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "object_match",
+    "video": "task2_object_match_q0.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "Why are you showing the block with an 'X' to the person in white?",
+    "choices": [
+      "I am asking him to go and find another identical block with an 'X' for me",
+      "I want him to take this block away from me",
+      "I am just showing him what I found",
+      "I am asking him to play a game with me"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "object_match",
+    "video": "task2_object_match_q1.mp4",
+    "duration": [
+      0,
+      7
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What is the recorder doing?",
+    "choices": [
+      "He is giving a block to the other person in front of him",
+      "He is receiving a block from another person's hand",
+      "He is chatting with another person, emtpy handed",
+      "He is showing a block to another person, but in the end he retrieve it back"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "object_match",
+    "video": "task2_object_match_q2.mp4",
+    "duration": [
+      0,
+      8
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What is the person in front of you doing?",
+    "choices": [
+      "He is giving a block to me (the recorder)",
+      "He is receiving a block from my hand",
+      "He is chatting with me, emtpy handed",
+      "He is showing a block to me, but in the end he retrieve it back"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "object_match",
+    "video": "task2_object_match_q3.mp4",
+    "duration": [
+      6,
+      15
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "What is your goal when walking towards the person in black?",
+    "choices": [
+      "To ask him if he has or can find a block identical to the one the person in beige showed me",
+      "To tell him to go talk to the person in beige",
+      "To give him a message",
+      "To see what he is cooking"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "object_match",
+    "video": "task2_object_match_q4.mp4",
+    "duration": [
+      0,
+      8
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "What is your next step?",
+    "choices": [
+      "I did not find the object nearby, so I need to carry this object and ask other people",
+      "I see the identical object nearby, and I need to retrieve it back to the person in front of me",
+      "I should give the block back to the person in front of me, since I did not find it",
+      "I need to keep the block in my hands for the person in front of me"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "object_match",
+    "video": "task2_object_match_q5.mp4",
+    "duration": [
+      0,
+      20
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "After receiving the identical item from the person in black, what is your next step?",
+    "choices": [
+      "I need to return to the person in beige and hand the matching item to him",
+      "I need to put the item in my pocket and leave",
+      "I need to ask the person in black for another one",
+      "I need to place the item on the table"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "object_match",
+    "video": "task2_object_match_q6.mp4",
+    "duration": [
+      14,
+      20
+    ],
+    "tag": [
+      "robot2",
+      "observe"
+    ],
+    "question": "What item do you find and pick up from the counter?",
+    "choices": [
+      "A block with an 'X' on it, matching what the person in white is looking for",
+      "A block with an 'O' on it",
+      "A cup of water",
+      "A knife"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "object_match",
+    "video": "task2_object_match_q7.mp4",
+    "duration": [
+      8,
+      14
+    ],
+    "tag": [
+      "robot2",
+      "TOM"
+    ],
+    "question": "Why do the person in front of you shows you a block with 'X' on it?",
+    "choices": [
+      "Because he wants me to find another same block for him",
+      "Because he wants me to take that block",
+      "Because he wants me to throw that block to the rubbish bin",
+      "Because he needs me to put that block to somewhere else"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "object_match",
+    "video": "task2_object_match_q8.mp4",
+    "duration": [
+      0,
+      20
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "Where does the second identical block come from?",
+    "choices": [
+      "The person in black picks it up from the kitchen counter",
+      "The person in white brings it from another room",
+      "The person in beige has it in his pocket",
+      "It falls from the ceiling"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "object_match",
+    "video": "task2_object_match_q9.mp4",
+    "duration": [
+      0,
+      27
+    ],
+    "tag": [
+      "3rd",
+      "TOM"
+    ],
+    "question": "Why does the person in white act as an intermediary in this video?",
+    "choices": [
+      "Because the person in beige needs an identical item, and the person in white helps relay this request to the person in black who has access to it",
+      "Because the person in beige and the person in black are angry at each other",
+      "Because the person in white wants to steal the items",
+      "Because it is a rule of the game they are playing"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "object_match",
+    "video": "task2_object_match_q10.mp4",
+    "duration": [
+      0,
+      27
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence best describes the overall causal logic of the event?",
+    "choices": [
+      "The user shows an item to request a duplicate, the messenger relays this to a third person who finds the matching item, and the messenger delivers it back to the user.",
+      "Two people take turns handing items to the person in white, who then stores them in the kitchen.",
+      "The person in black wants to distribute his blocks, so he uses the person in white to deliver them to the person in beige.",
+      "The three people are organizing the blocks by passing them back and forth randomly."
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "queue_info_share",
+    "video": "task2_queue_info_share_q0.mp4",
+    "duration": [
+      12,
+      18
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What happens when you reach the door?",
+    "choices": [
+      "I try to open the door but find out that it is locked",
+      "I successfully open the door and walk through",
+      "I put the green object on the floor next to the door",
+      "I knock on the door and someone opens it for me"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "queue_info_share",
+    "video": "task2_queue_info_share_q1.mp4",
+    "duration": [
+      12,
+      19
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "What is your next step after finding the door is locked?",
+    "choices": [
+      "I will turn around, walk back, and tell the person behind me that the path is blocked",
+      "I will keep trying to open the door until it opens",
+      "I will drop the green object and wait at the door",
+      "I will ask the person behind me to come and try opening it"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "queue_info_share",
+    "video": "task2_queue_info_share_q2.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What is the person in front of you doing?",
+    "choices": [
+      "He is carrying a green object and walking towards the door ahead of me",
+      "He is turning around and walking towards me",
+      "He is waiting for me to lead the way",
+      "He is trying to open the door"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "queue_info_share",
+    "video": "task2_queue_info_share_q3.mp4",
+    "duration": [
+      0,
+      15
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Why are you following the person in front of you?",
+    "choices": [
+      "Because we are both carrying items to the same destination, and he is leading the way",
+      "Because I want to steal the item he is carrying",
+      "Because I am trying to catch him",
+      "Because he told me to walk exactly behind his footsteps"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "queue_info_share",
+    "video": "task2_queue_info_share_q4.mp4",
+    "duration": [
+      15,
+      23
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What does the person in front of you do when he walks back to you?",
+    "choices": [
+      "He signals or tells me that the door is locked and we cannot pass",
+      "He asks me to hand him my yellow object",
+      "He tells me to go check the door myself",
+      "He ignores me and walks past me quickly"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "queue_info_share",
+    "video": "task2_queue_info_share_q5.mp4",
+    "duration": [
+      15,
+      22
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "What is your next step after receiving the message from the person in front of you?",
+    "choices": [
+      "I will directly turn around and walk back, without going to the door to check it myself",
+      "I will walk to the door to double-check if it is really locked",
+      "I will put my object on the floor and wait for someone to unlock the door",
+      "I will hand my object to him and let him try again"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "queue_info_share",
+    "video": "task2_queue_info_share_q6.mp4",
+    "duration": [
+      0,
+      23
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "What is the spatial relationship and movement pattern of the two people carrying items?",
+    "choices": [
+      "The person in black walks in front to the door, then returns and meets the person in white halfway",
+      "They walk side by side to the door and both try to open it",
+      "The person in white goes to the door first, while the person in black waits",
+      "They both drop their items and run towards the door"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "queue_info_share",
+    "video": "task2_queue_info_share_q7.mp4",
+    "duration": [
+      0,
+      23
+    ],
+    "tag": [
+      "3rd",
+      "TOM"
+    ],
+    "question": "Why does the person in white turn around halfway without ever reaching the door?",
+    "choices": [
+      "Because he trusts the information from the person in black that the door is locked, thus avoiding redundant work",
+      "Because he suddenly realized he picked up the wrong item",
+      "Because he is too tired to walk all the way to the door",
+      "Because the person in black angrily chased him away"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "queue_info_share",
+    "video": "task2_queue_info_share_q8.mp4",
+    "duration": [
+      0,
+      23
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence best describes the overall causal logic of this event?",
+    "choices": [
+      "Two people are delivering items; the leader finds the door locked and informs the follower, causing the follower to turn back halfway and save effort.",
+      "Two people are racing to the door, the leader wins and tells the loser to go back.",
+      "The leader doesn't know the way, so he turns back to ask the follower, and they both decide to quit.",
+      "The follower is scared of the door, so he asks the leader to check it first."
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "sub_robot_call",
+    "video": "task2_sub_robot_call_q0.mp4",
+    "duration": [
+      0,
+      4
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What is the recorder doing at the beginning?",
+    "choices": [
+      "He is handing a stack of cluttered items to the person in white",
+      "He is taking items away from the person in white",
+      "He is packing items into his own bag",
+      "He is throwing the items onto the floor"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "sub_robot_call",
+    "video": "task2_sub_robot_call_q1.mp4",
+    "duration": [
+      0,
+      8
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "Why do you hand the items to the person in white?",
+    "choices": [
+      "Because I want him and the other person to help me organize and sort these items",
+      "Because I want him to hold them for a second while I tie my shoes",
+      "Because I am giving him a gift",
+      "Because I want him to throw them in the trash"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "sub_robot_call",
+    "video": "task2_sub_robot_call_q2.mp4",
+    "duration": [
+      6,
+      25
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "After placing the items on the table, what is your main action?",
+    "choices": [
+      "I point at specific items and then point to different locations to instruct the person in black",
+      "I pick up the items one by one and put them on the shelves myself",
+      "I leave the room to find more items",
+      "I play a game with the person in black using the items"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "sub_robot_call",
+    "video": "task2_sub_robot_call_q3.mp4",
+    "duration": [
+      0,
+      25
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Why don't you put the items away yourself after receiving them?",
+    "choices": [
+      "Because I act as the planner to analyze where things should go, and delegate the physical execution to the person in black",
+      "Because the items are too heavy for me to carry",
+      "Because I don't know where the items belong",
+      "Because I am too tired to move"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "sub_robot_call",
+    "video": "task2_sub_robot_call_q4.mp4",
+    "duration": [
+      12,
+      17
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What is the person in white doing in front of you?",
+    "choices": [
+      "He is pointing to the green box and then pointing towards the red shelf",
+      "He is handing the green box directly to me",
+      "He is opening the green box to see what is inside",
+      "He is taking the green box away from the table"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "sub_robot_call",
+    "video": "task2_sub_robot_call_q5.mp4",
+    "duration": [
+      12,
+      17
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "What is your next step after seeing the person in white's pointing gesture?",
+    "choices": [
+      "I will pick up the green box and place it on the red shelf according to his instruction",
+      "I will point back at him and shake my head",
+      "I will take the green box and put it on the floor",
+      "I will stand still and wait for him to move it"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "sub_robot_call",
+    "video": "task2_sub_robot_call_q6.mp4",
+    "duration": [
+      0,
+      25
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Why do you only move the items after the person in white points to a location?",
+    "choices": [
+      "Because he is analyzing the placement locations, and I am following his navigation to execute the task",
+      "Because I am not allowed to touch the items otherwise",
+      "Because I am visually impaired and need him to show me the items",
+      "Because I want to make sure he is watching me work"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "sub_robot_call",
+    "video": "task2_sub_robot_call_q7.mp4",
+    "duration": [
+      0,
+      27
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "How do the person in white and the person in black cooperate to organize the items?",
+    "choices": [
+      "The person in white acts as the director pointing to locations, while the person in black acts as the worker carrying the items",
+      "They both take turns picking up items and putting them away",
+      "The person in black decides where things go, and the person in white carries them",
+      "They argue about where to put the items and eventually leave them on the table"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task2",
+    "scenario": "sub_robot_call",
+    "video": "task2_sub_robot_call_q8.mp4",
+    "duration": [
+      0,
+      27
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence best describes the overall logic of this event?",
+    "choices": [
+      "The user asks for help organizing items; instead of doing it directly, one helper analyzes and delegates the placement locations, while the other helper physically executes the sorting.",
+      "The user gives away his items to two friends, and they fight over who gets to keep what.",
+      "Three people are taking inventory of the items on the table by pointing at them and counting.",
+      "One helper tries to steal the items, but the other helper points out the theft and returns them to the shelves."
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_chair_move",
+    "video": "task3_busy_chair_move_q0.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What is your main action when you stand in the room?",
+    "choices": [
+      "I am broadcasting a request, asking if someone can help me get my clothes from the other side",
+      "I am asking the people moving the tables to stop what they are doing",
+      "I am telling everyone to leave the room",
+      "I am asking where the restroom is"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_chair_move",
+    "video": "task3_busy_chair_move_q1.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "Why does the person in the black hoodie answer your request, rather than the other two?",
+    "choices": [
+      "Because he is standing idle, while the other two people are physically occupied with a collaborative task of moving tables",
+      "Because I specifically called his name",
+      "Because he is the only one who knows whose jacket it is",
+      "Because the other two people are deaf and didn't hear me"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_chair_move",
+    "video": "task3_busy_chair_move_q2.mp4",
+    "duration": [
+      0,
+      8
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What is your primary physical activity in the video?",
+    "choices": [
+      "I am working together with the person in the grey t-shirt to push and align the white tables",
+      "I am looking for a black jacket",
+      "I am standing still and watching the person in the grey jacket",
+      "I am resting on the chair"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_chair_move",
+    "video": "task3_busy_chair_move_q3.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Why do you ignore the request made by the person in the grey jacket?",
+    "choices": [
+      "Because I am actively engaged in moving heavy furniture with a partner, and I know the idle person in the room can easily handle the request",
+      "Because I am angry at the person asking for help",
+      "Because I am wearing earplugs",
+      "Because I want to make the person fetch it himself"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_chair_move",
+    "video": "task3_busy_chair_move_q4.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "robot3",
+      "observe"
+    ],
+    "question": "What is your state right before the person asks for help?",
+    "choices": [
+      "I am standing idle by the wall, not engaged in any specific task",
+      "I am helping move the white tables",
+      "I am wearing the black jacket",
+      "I am drawing on the chalkboard"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_chair_move",
+    "video": "task3_busy_chair_move_q5.mp4",
+    "duration": [
+      0,
+      12
+    ],
+    "tag": [
+      "robot3",
+      "TOM"
+    ],
+    "question": "Why do you immediately take on the task of getting the clothes?",
+    "choices": [
+      "Because a general request for help was made, and since I am the only available person, I implicitly adopt the task",
+      "Because I was trying to steal the jacket before he asked",
+      "Because the other two people ordered me to do it",
+      "Because the person offering the jacket offered to pay me"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_chair_move",
+    "video": "task3_busy_chair_move_q6.mp4",
+    "duration": [
+      0,
+      7
+    ],
+    "tag": [
+      "robot3",
+      "action"
+    ],
+    "question": "What is your next physical action to complete the task?",
+    "choices": [
+      "I will walk over to the chair, pick up the black jacket, and hand it to the person who asked",
+      "I will point to the chair and tell him to get it himself",
+      "I will throw the jacket on the floor",
+      "I will put the jacket on myself"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_chair_move",
+    "video": "task3_busy_chair_move_q7.mp4",
+    "duration": [
+      0,
+      18
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "How do the people in the room divide their responses to the human's request?",
+    "choices": [
+      "The two busy people continue moving tables, while the idle person goes to fetch the clothes",
+      "All three people rush to get the clothes",
+      "The idle person starts moving tables, and the busy people get the clothes",
+      "No one responds, and everyone freezes"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_chair_move",
+    "video": "task3_busy_chair_move_q8.mp4",
+    "duration": [
+      0,
+      18
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence best describes the overall causal logic of this event?",
+    "choices": [
+      "A general request is broadcasted; the currently idle agent proactively adopts the task, allowing the busy agents to continue their collaborative physical work uninterrupted.",
+      "The human interrupts a group activity, forcing all members to stop working and find his clothes.",
+      "Three people are fighting over who gets to keep the black jacket.",
+      "The busy agents yell at the idle agent, forcing him to do the human's bidding."
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_do_cloth",
+    "video": "task3_busy_do_cloth_q0.mp4",
+    "duration": [
+      0,
+      8
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What do you do after entering the room?",
+    "choices": [
+      "I place my black jacket on the table",
+      "I put my black jacket on and walk out",
+      "I throw my jacket at the person moving the chairs",
+      "I sit down and start reading a manual"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_do_cloth",
+    "video": "task3_busy_do_cloth_q1.mp4",
+    "duration": [
+      0,
+      7
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What is your status when the person with the jacket walks in?",
+    "choices": [
+      "I am basically idle, just playing with some small items on the table",
+      "I am busy moving heavy chairs across the room",
+      "I am highly focused on reading a manual and writing",
+      "I am sleeping with my head on the table"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_do_cloth",
+    "video": "task3_busy_do_cloth_q2.mp4",
+    "duration": [
+      0,
+      12
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Why do you take the initiative to help fold the jacket while your peers do not?",
+    "choices": [
+      "Because I am the only available person in the room, making it my implicit responsibility to take on the new task",
+      "Because my peers asked me to do it for them",
+      "Because I want to steal the jacket",
+      "Because I am the closest person to the jacket"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_do_cloth",
+    "video": "task3_busy_do_cloth_q3.mp4",
+    "duration": [
+      0,
+      7
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "What is your next step after observing the jacket being placed on the table?",
+    "choices": [
+      "I will walk over to the jacket and help the person fold it",
+      "I will pick up the jacket and throw it on the floor",
+      "I will ignore it and walk out of the room",
+      "I will tell the person moving the chairs to come and fold it"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_do_cloth",
+    "video": "task3_busy_do_cloth_q4.mp4",
+    "duration": [
+      0,
+      8
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What is your current main task in the video?",
+    "choices": [
+      "I am physically occupied with moving and organizing chairs in the room",
+      "I am standing still and waiting for someone to give me a task",
+      "I am assembling parts based on a manual",
+      "I am helping fold a black jacket"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_do_cloth",
+    "video": "task3_busy_do_cloth_q5.mp4",
+    "duration": [
+      0,
+      15
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Why don't you stop to help the person with the jacket?",
+    "choices": [
+      "Because I am already engaged in my own task, and I can see that an available peer is already stepping up to help",
+      "Because I am too tired to walk over to the table",
+      "Because I did not see the person with the jacket come in",
+      "Because I am angry at the person who brought the jacket"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_do_cloth",
+    "video": "task3_busy_do_cloth_q6.mp4",
+    "duration": [
+      0,
+      8
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What are you doing when the event happens?",
+    "choices": [
+      "I am sitting at the desk, highly focused on writing and looking at a manual",
+      "I am moving chairs around the room",
+      "I am playing with some small plastic items",
+      "I am talking to the person with the black jacket"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_do_cloth",
+    "video": "task3_busy_do_cloth_q7.mp4",
+    "duration": [
+      0,
+      14
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Why do you ignore the situation with the jacket and continue your work?",
+    "choices": [
+      "Because my task requires high focus, and since someone else is free to handle the jacket, my intervention is unnecessary",
+      "Because the jacket is too dirty for me to touch",
+      "Because I don't like the person who brought the jacket",
+      "Because I am wearing headphones and cannot hear anything"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_do_cloth",
+    "video": "task3_busy_do_cloth_q8.mp4",
+    "duration": [
+      0,
+      13
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "Who responds to the human's implicit need for help?",
+    "choices": [
+      "The person who was previously idle steps forward to help, while the two busy people continue their tasks",
+      "All three people stop their tasks and rush to help",
+      "The person moving the chairs drops a chair to come help",
+      "No one helps, and the human folds it alone"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_do_cloth",
+    "video": "task3_busy_do_cloth_q9.mp4",
+    "duration": [
+      0,
+      13
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence best describes the overall causal logic of this event?",
+    "choices": [
+      "A new task is introduced to the group, and it is naturally adopted by the only available member, allowing the occupied members to maintain their workflow without interruption.",
+      "Three people compete to fold a jacket, and the person standing closest to the table wins.",
+      "The human forces the idle person to work as a punishment for not doing anything earlier.",
+      "The two busy people order the idle person to go fold the jacket so they don't have to."
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_no_help",
+    "video": "task3_busy_no_help_q0.mp4",
+    "duration": [
+      0,
+      8
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "When you try to hand your jacket to the other people, what is their current status?",
+    "choices": [
+      "They are all actively occupied with their own tasks, such as moving a chair or writing on the board",
+      "They are all standing idle and waiting for my commands",
+      "They are all sleeping on the desks",
+      "They are all playing with their phones"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_no_help",
+    "video": "task3_busy_no_help_q1.mp4",
+    "duration": [
+      0,
+      18
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "Why do you withdraw your hand and turn away instead of continuing to ask them for help?",
+    "choices": [
+      "Because I realize that everyone is busy with their own tasks and cannot be interrupted to help me",
+      "Because I suddenly decided I don't want to put my jacket away anymore",
+      "Because they verbally yelled at me to go away",
+      "Because I dropped the jacket on the floor"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_no_help",
+    "video": "task3_busy_no_help_q2.mp4",
+    "duration": [
+      0,
+      14
+    ],
+    "tag": [
+      "human",
+      "action"
+    ],
+    "question": "After seeing that no one is available to help, what is your next step?",
+    "choices": [
+      "I will walk over to an empty desk and put the jacket down by myself",
+      "I will force one of them to drop what they are doing and take my jacket",
+      "I will stand there and wait until someone finishes their task",
+      "I will put the jacket back on"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_no_help",
+    "video": "task3_busy_no_help_q3.mp4",
+    "duration": [
+      0,
+      8
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What does the person with the jacket want from you?",
+    "choices": [
+      "He wants to hand me his jacket so I can help him put it away",
+      "He wants to show me a magic trick with his jacket",
+      "He is asking me to help him put the jacket on",
+      "He wants to take my jacket away from me"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_no_help",
+    "video": "task3_busy_no_help_q4.mp4",
+    "duration": [
+      0,
+      8
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Why do you gesture (wave your hand) to refuse his request?",
+    "choices": [
+      "Because I am currently occupied with my own task and cannot interrupt it to assist him",
+      "Because I am angry at him and don't like him",
+      "Because the jacket is too dirty for me to touch",
+      "Because I want him to give it to the person next to me instead"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_no_help",
+    "video": "task3_busy_no_help_q5.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What is your state when the person with the jacket looks around for help?",
+    "choices": [
+      "I am busy erasing the chalkboard and focused on my own task",
+      "I am standing still and looking directly at him, ready to help",
+      "I am walking towards him to take the jacket",
+      "I am packing my bag to leave the room"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_no_help",
+    "video": "task3_busy_no_help_q6.mp4",
+    "duration": [
+      0,
+      8
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "Since you are currently busy, what should your action be when he seeks help?",
+    "choices": [
+      "I should continue focusing on my current task, implicitly or explicitly signaling that I am unavailable",
+      "I should immediately drop my eraser and run to help him",
+      "I should yell at him for interrupting me",
+      "I should take his jacket and throw it on the floor"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_no_help",
+    "video": "task3_busy_no_help_q7.mp4",
+    "duration": [
+      0,
+      12
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "How many people step forward to help the person with the jacket?",
+    "choices": [
+      "None of them, because they are all already engaged in other tasks",
+      "One person stops their task to help him",
+      "All three people stop their tasks to help him",
+      "Two people help him while the third one ignores him"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "busy_no_help",
+    "video": "task3_busy_no_help_q8.mp4",
+    "duration": [
+      0,
+      12
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence best describes the overall causal logic of this event?",
+    "choices": [
+      "A person needs help putting an item away, but upon observing that all potential helpers are currently occupied, he adapts and completes the task independently.",
+      "A person tries to hand out jackets to his friends, but they all refuse because they don't like the color.",
+      "Three people are working hard so that the fourth person can relax and do nothing.",
+      "The person with the jacket forces his busy friends to stop working and help him immediately."
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "chair",
+    "video": "task3_chair_q0.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What is the recorder doing at the beginning?",
+    "choices": [
+      "He points specifically at the person in the middle, and then points to the white table",
+      "He waves his hands to tell all three people to leave",
+      "He points at the ceiling and then at the floor",
+      "He gives a high-five to the person in the middle"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "chair",
+    "video": "task3_chair_q1.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "Why do you point directly at one specific person instead of just pointing at the table?",
+    "choices": [
+      "Because I want to explicitly assign the table-moving task to that specific individual rather than the whole group",
+      "Because I want him to know I am angry at him",
+      "Because I am asking for his name",
+      "Because I want the other two people to push him"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "chair",
+    "video": "task3_chair_q2.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "Who is the person in the grey jacket pointing at?",
+    "choices": [
+      "He is pointing directly at me, and then gesturing towards the white table",
+      "He is pointing at the person standing to my left",
+      "He is pointing at the person standing to my right",
+      "He is pointing at the door behind me"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "chair",
+    "video": "task3_chair_q3.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "How do you interpret the gesture from the person in the grey jacket?",
+    "choices": [
+      "I recognize that I am the explicit target of his command, so I am the one solely responsible for moving the table",
+      "I think he is just saying hello to me",
+      "I think he wants me to stand still and do nothing",
+      "I think he wants me to tell the others to move the table"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "chair",
+    "video": "task3_chair_q4.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "What is your next step after recognizing you are the target?",
+    "choices": [
+      "I will step forward, walk to the white table, and move it as instructed",
+      "I will step back and hide behind my peers",
+      "I will point back at him and shake my head",
+      "I will tell the person next to me to go do it"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "chair",
+    "video": "task3_chair_q5.mp4",
+    "duration": [
+      0,
+      15
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "How does the group react to the human's command?",
+    "choices": [
+      "Only the individual who was specifically pointed at steps forward to move the table, while the others remain still",
+      "All three individuals rush towards the table at the same time",
+      "The person who was pointed at stays still, and the other two move the table",
+      "Nobody moves the table, and they all just stare at the human"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "chair",
+    "video": "task3_chair_q6.mp4",
+    "duration": [
+      0,
+      15
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence best describes the overall causal logic of this event?",
+    "choices": [
+      "A commander uses a physical gesture to explicitly select one specific agent from a group for a task, and only the targeted agent executes the command while the bystanders appropriately remain idle.",
+      "A commander asks a group for help, and they compete to see who can move the table the fastest.",
+      "The person in the middle decides to move the table on his own initiative, and the commander points at him in surprise.",
+      "The commander points at the table to show it is broken, and one person goes to fix it."
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "chalk_change",
+    "video": "task3_chalk_change_q0.mp4",
+    "duration": [
+      0,
+      8
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What happens when you are writing on the chalkboard?",
+    "choices": [
+      "The chalk becomes too short or broken to write with, so I stop writing",
+      "I finish writing all the equations successfully",
+      "The chalkboard falls off the wall",
+      "Someone takes the chalk out of my hand"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "chalk_change",
+    "video": "task3_chalk_change_q1.mp4",
+    "duration": [
+      0,
+      14
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "Why do you turn around and hand the chalk specifically to one person?",
+    "choices": [
+      "Because I want to explicitly delegate the task of getting a new chalk to him, rather than asking the whole group",
+      "Because he was the one who gave me the broken chalk earlier",
+      "Because I want him to come to the board and solve the math problem",
+      "Because I am angry at him and throwing the chalk at him"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "chalk_change",
+    "video": "task3_chalk_change_q2.mp4",
+    "duration": [
+      6,
+      13
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What does the teacher do when he turns around?",
+    "choices": [
+      "He looks directly at me and holds out his chalk, singling me out from the group",
+      "He throws the chalk on the floor and looks at everyone",
+      "He ignores me and asks the person next to me for help",
+      "He walks out of the classroom without saying anything"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "chalk_change",
+    "video": "task3_chalk_change_q3.mp4",
+    "duration": [
+      0,
+      18
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Why do you step forward to take the chalk while your peers stand still?",
+    "choices": [
+      "Because the teacher explicitly directed his request to me, making it my specific responsibility to help him",
+      "Because I am the closest person to the teacher",
+      "Because my peers are asleep and didn't notice",
+      "Because I want to write on the chalkboard myself"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "chalk_change",
+    "video": "task3_chalk_change_q4.mp4",
+    "duration": [
+      0,
+      21
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "After taking the broken chalk from the teacher, what is your next step?",
+    "choices": [
+      "I will walk to the desk, get a new piece of chalk, and bring it back to exchange with the teacher",
+      "I will put the broken chalk in my pocket and leave the room",
+      "I will hand the broken chalk to the person standing next to me",
+      "I will throw the broken chalk into the trash bin and sit down"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "chalk_change",
+    "video": "task3_chalk_change_q5.mp4",
+    "duration": [
+      8,
+      16
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "Who is the teacher interacting with when he turns around?",
+    "choices": [
+      "He is specifically making eye contact with and handing the chalk to the person standing next to me",
+      "He is looking directly at me and asking me for help",
+      "He is addressing the entire group at once",
+      "He is talking to himself"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "chalk_change",
+    "video": "task3_chalk_change_q6.mp4",
+    "duration": [
+      0,
+      16
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Why do you remain standing still instead of helping the teacher?",
+    "choices": [
+      "Because the teacher explicitly assigned the task to someone else, so my intervention is not needed",
+      "Because I don't know where the new chalk is",
+      "Because I am refusing to obey the teacher's orders",
+      "Because my feet are stuck to the floor"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "chalk_change",
+    "video": "task3_chalk_change_q7.mp4",
+    "duration": [
+      0,
+      15
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "Since the person next to you has taken the task, what should you do?",
+    "choices": [
+      "I should remain idle in my position and let him complete the task",
+      "I should race him to the desk to grab the chalk first",
+      "I should go up to the teacher and take the broken chalk instead",
+      "I should turn around and walk away"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "chalk_change",
+    "video": "task3_chalk_change_q8.mp4",
+    "duration": [
+      0,
+      24
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "How does the group respond to the teacher's request?",
+    "choices": [
+      "Only the specific person targeted by the teacher steps forward to help, while the other two remain idle",
+      "All three people step forward simultaneously to help",
+      "The person furthest from the teacher steps forward",
+      "No one steps forward, and the teacher goes to get the chalk himself"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "chalk_change",
+    "video": "task3_chalk_change_q9.mp4",
+    "duration": [
+      0,
+      24
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence best describes the overall causal logic of this event?",
+    "choices": [
+      "The teacher encounters a tool failure and explicitly delegates the replacement task to one targeted assistant, who executes it while the non-targeted assistants remain properly idle.",
+      "The teacher throws away a broken tool, and three assistants compete to find a new one, with one eventually succeeding.",
+      "An assistant notices the teacher needs chalk and volunteers to get it, while the teacher waits passively.",
+      "The teacher tells all three assistants to get chalk, but two of them ignore the command and only one obeys."
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "closest_help",
+    "video": "task3_closest_help_q0.mp4",
+    "duration": [
+      0,
+      3
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What are you doing at the beginning of the video?",
+    "choices": [
+      "I am pushing a chair into the room and pointing to a specific desk",
+      "I am pushing a chair out of the room",
+      "I am asking people to leave the room",
+      "I am sitting on the chair and sliding around"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "closest_help",
+    "video": "task3_closest_help_q1.mp4",
+    "duration": [
+      0,
+      9
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "Why do you point at the desk instead of moving the chair there yourself?",
+    "choices": [
+      "Because I am delegating the task of placing the chair to the other people in the room",
+      "Because I want someone to clean the desk",
+      "Because I am showing them my favorite spot",
+      "Because my arm hurts and I need to stretch it"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "closest_help",
+    "video": "task3_closest_help_q2.mp4",
+    "duration": [
+      0,
+      8
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "When the person pushes the chair in and points, what is your spatial position compared to the other two people standing by the wall?",
+    "choices": [
+      "I am standing significantly closer to the chair and the person requesting help",
+      "I am standing the furthest away from the chair",
+      "We are all standing at the exact same distance",
+      "I am hiding behind the other two people"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "closest_help",
+    "video": "task3_closest_help_q3.mp4",
+    "duration": [
+      0,
+      12
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Why do you take the initiative to move the chair while the other two people do not?",
+    "choices": [
+      "Because I am spatially the closest to the chair, making me the most efficient person to take the task",
+      "Because the other two people are not allowed to touch chairs",
+      "Because the person pushing the chair called my name",
+      "Because I wanted to steal the chair for myself"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "closest_help",
+    "video": "task3_closest_help_q4.mp4",
+    "duration": [
+      0,
+      9
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "What is your next step to complete the task?",
+    "choices": [
+      "I will lift the chair and carry it over to the location he pointed to",
+      "I will push the chair back out the door",
+      "I will sit on the chair right where it is",
+      "I will tell the other two people to come and move it"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "closest_help",
+    "video": "task3_closest_help_q5.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What happens after the chair is pushed into the room?",
+    "choices": [
+      "The person in the grey t-shirt, who is closest to the chair, walks over to pick it up",
+      "The person in the black hoodie runs to grab it",
+      "Nobody moves, and the chair stays there",
+      "The person who pushed it in carries it away"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "closest_help",
+    "video": "task3_closest_help_q6.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Why don't you go over to help move the chair?",
+    "choices": [
+      "Because the person closest to the chair has already taken over the task, so my intervention is unnecessary and redundant",
+      "Because I don't know how to carry a chair",
+      "Because the chair looks too heavy for me",
+      "Because I am angry at the person who pushed it in"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "closest_help",
+    "video": "task3_closest_help_q7.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "Since the task is being handled, what is your next step?",
+    "choices": [
+      "I will remain standing still where I am",
+      "I will walk over and try to pull the chair away from him",
+      "I will leave the room immediately",
+      "I will applaud him"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "closest_help",
+    "video": "task3_closest_help_q8.mp4",
+    "duration": [
+      0,
+      12
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What happens after the chair is pushed into the room?",
+    "choices": [
+      "The person in the grey t-shirt, who is closest to the chair, walks over to pick it up",
+      "The person in the black hoodie runs to grab it",
+      "Nobody moves, and the chair stays there",
+      "The person who pushed it in carries it away"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "closest_help",
+    "video": "task3_closest_help_q9.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Why don't you go over to help move the chair?",
+    "choices": [
+      "Because the person closest to the chair has already taken over the task, so my intervention is unnecessary and redundant",
+      "Because I don't know how to carry a chair",
+      "Because the chair looks too heavy for me",
+      "Because I am angry at the person who pushed it in"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "closest_help",
+    "video": "task3_closest_help_q10.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "Since the task is being handled, what is your next step?",
+    "choices": [
+      "I will remain standing still where I am",
+      "I will walk over and try to pull the chair away from him",
+      "I will leave the room immediately",
+      "I will applaud him"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "closest_help",
+    "video": "task3_closest_help_q11.mp4",
+    "duration": [
+      0,
+      21
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "How do the three potential helpers respond to the task?",
+    "choices": [
+      "The one closest to the chair performs the task, while the two further away stand still",
+      "All three of them rush to grab the chair at the same time",
+      "The two furthest people perform the task, while the closest one watches",
+      "None of them respond to the task"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "closest_help",
+    "video": "task3_closest_help_q12.mp4",
+    "duration": [
+      0,
+      21
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence best describes the overall logic of this event?",
+    "choices": [
+      "A human delegates a task implicitly, and it is automatically adopted by the closest person to optimize efficiency, while others remain idle to avoid redundancy.",
+      "A human forces the closest person to work while allowing the others to rest as a punishment.",
+      "Three people compete to move a chair, and the closest one wins the race.",
+      "The closest person moves the chair because the others are physically trapped and unable to move."
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "microwave",
+    "video": "task3_microwave_q0.mp4",
+    "duration": [
+      0,
+      5
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What are you doing at the beginning of the video?",
+    "choices": [
+      "I point directly at the person on the left, and then point towards the microwave and counter area",
+      "I am asking all three people to go to the kitchen",
+      "I am pointing at the ceiling",
+      "I am handing a bowl to the person on the left"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "microwave",
+    "video": "task3_microwave_q1.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "Why do you specifically point at the person on the left instead of making a general request?",
+    "choices": [
+      "Because I want to explicitly assign the task of fetching the item to him alone, rather than the whole group",
+      "Because he is the tallest person in the room",
+      "Because I want him to leave the room",
+      "Because I am angry at him"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "microwave",
+    "video": "task3_microwave_q2.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What gesture does the person in the grey zip-up jacket make towards you?",
+    "choices": [
+      "He points explicitly at me, and then gestures towards the counter with the microwave",
+      "He waves his hand to say hello to me",
+      "He points at the person standing next to me",
+      "He tells me to stop moving"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "microwave",
+    "video": "task3_microwave_q3.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "How do you interpret his pointing gesture?",
+    "choices": [
+      "I recognize that I have been explicitly selected as the target to perform the task he is indicating at the counter",
+      "I think he is admiring my sweater",
+      "I believe he wants the person next to me to get the bowl",
+      "I think he wants me to turn around and face the wall"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "microwave",
+    "video": "task3_microwave_q4.mp4",
+    "duration": [
+      0,
+      7
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "After recognizing you are the assigned target, what is your next action?",
+    "choices": [
+      "I will walk to the counter, pick up the white bowl next to the microwave, and hand it back to him",
+      "I will stay still and wait for someone else to do it",
+      "I will walk to the vending machine to buy a drink",
+      "I will walk to the counter and eat the food in the bowl"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "microwave",
+    "video": "task3_microwave_q5.mp4",
+    "duration": [
+      0,
+      20
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "How do the three people respond to the pointing gesture?",
+    "choices": [
+      "Only the person explicitly pointed at steps forward to fetch the bowl, while the other two remain idle",
+      "All three people walk to the counter to get the bowl together",
+      "The person pointed at stays still, and another person gets the bowl",
+      "No one moves, and they all just look at the bowl"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "microwave",
+    "video": "task3_microwave_q6.mp4",
+    "duration": [
+      0,
+      20
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence best describes the overall logic of this event?",
+    "choices": [
+      "A person uses a direct pointing gesture to explicitly delegate a fetching task to one specific individual in a group, who then successfully executes it while the others correctly remain idle.",
+      "A person asks a group to fetch a bowl, and the person on the left wins the race to get it.",
+      "The person on the left decides he wants a bowl and ignores the pointing gesture of the person in the grey jacket.",
+      "Three people are taking turns picking up a bowl, and it is currently the left person's turn."
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "move_away",
+    "video": "task3_move_away_q0.mp4",
+    "duration": [
+      0,
+      5
+    ],
+    "tag": [
+      "human",
+      "observe"
+    ],
+    "question": "What is the situation when you walk forward in the aisle?",
+    "choices": [
+      "Three people are standing in a line, completely blocking my pathway",
+      "Three people are walking towards me to greet me",
+      "Three people are running away from me",
+      "The aisle is completely clear for me to walk"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "move_away",
+    "video": "task3_move_away_q1.mp4",
+    "duration": [
+      5,
+      8
+    ],
+    "tag": [
+      "human",
+      "TOM"
+    ],
+    "question": "Why do the three people look at each other instead of moving immediately after you stop?",
+    "choices": [
+      "They are non-verbally negotiating and coordinating who moves in which direction to make a clear path for me",
+      "They are looking at each other because they are angry at me",
+      "They don't know I am there and are just chatting",
+      "They are waiting for me to turn around and go back"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "move_away",
+    "video": "task3_move_away_q2.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What happens when the person in the grey jacket approaches your group?",
+    "choices": [
+      "He stops walking right in front of us because we are blocking his way",
+      "He pushes us aside forcefully",
+      "He hands us a package",
+      "He ignores us and walks straight through us"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "move_away",
+    "video": "task3_move_away_q3.mp4",
+    "duration": [
+      5,
+      9
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "As the person standing in the left, why do you look at your neighbors on both sides?",
+    "choices": [
+      "To visually coordinate our movement directions so we can split efficiently without bumping into each other",
+      "To tell them to stand still and not let the person pass",
+      "Because I want to see what clothes they are wearing",
+      "Because I am looking for something I dropped on the floor"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "move_away",
+    "video": "task3_move_away_q4.mp4",
+    "duration": [
+      8,
+      12
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "What is your next step after making eye contact with your neighbors?",
+    "choices": [
+      "I will stay still since I am already in the left most side",
+      "I will step forward to block the person completely",
+      "I will sit down on the floor",
+      "I will tell the person to walk back"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "move_away",
+    "video": "task3_move_away_q5.mp4",
+    "duration": [
+      0,
+      9
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What does the person standing next to you (in the left) do before moving?",
+    "choices": [
+      "He turns his head to look at me to make eye contact",
+      "He waves his hand at me",
+      "He turns his back on me",
+      "He starts running away"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "move_away",
+    "video": "task3_move_away_q6.mp4",
+    "duration": [
+      0,
+      9
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Why does the person in the left look at you?",
+    "choices": [
+      "To silently agree on which direction we should each move to let the person in the grey jacket pass",
+      "To ask me what time it is",
+      "Because he is afraid of the person in the grey jacket",
+      "To tell me a secret"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "move_away",
+    "video": "task3_move_away_q7.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "What is your next step after making eye contact and understanding the situation?",
+    "choices": [
+      "I will step left to the side to help create a clear path",
+      "I will stand exactly where I am and refuse to move",
+      "I will walk directly towards the person in the grey jacket",
+      "I will jump over the person next to me"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "move_away",
+    "video": "task3_move_away_q8.mp4",
+    "duration": [
+      0,
+      5
+    ],
+    "tag": [
+      "robot",
+      "observe"
+    ],
+    "question": "What is the state of the aisle at the very beginning of the video?",
+    "choices": [
+      "My two friends and I are standing together, blocking the entire width of the aisle",
+      "The aisle is completely empty",
+      "People are walking past us freely",
+      "There is a big box blocking the aisle"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "move_away",
+    "video": "task3_move_away_q9.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "robot",
+      "TOM"
+    ],
+    "question": "Why does the person in the grey jacket stop in front of your group?",
+    "choices": [
+      "Because he wants to keep walking forward but we are physically in his way",
+      "Because he wants to join our group and chat with us",
+      "Because he forgot where he was going",
+      "Because he is tired and needs to rest"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "move_away",
+    "video": "task3_move_away_q10.mp4",
+    "duration": [
+      0,
+      6
+    ],
+    "tag": [
+      "robot",
+      "action"
+    ],
+    "question": "How do you react to solve this blocked situation?",
+    "choices": [
+      "I coordinate with my friends and step aside to yield the right-of-way",
+      "I cross my arms and stare at the person in the grey jacket",
+      "I walk forward and push the person away",
+      "I turn around and walk in the opposite direction"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "move_away",
+    "video": "task3_move_away_q11.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "3rd",
+      "observe"
+    ],
+    "question": "How do the three blocking people move to make way for the person?",
+    "choices": [
+      "One person steps to one side, while the other two step to the opposite side, opening a path in between",
+      "All three people step to the exact same side",
+      "They all step backward simultaneously",
+      "They do not move at all"
+    ],
+    "answer": 0
+  },
+  {
+    "task": "task3",
+    "scenario": "move_away",
+    "video": "task3_move_away_q12.mp4",
+    "duration": [
+      0,
+      10
+    ],
+    "tag": [
+      "3rd",
+      "reason"
+    ],
+    "question": "Which sentence best describes the overall causal logic of this event?",
+    "choices": [
+      "A person's path is blocked by a group, so the group non-verbally coordinates their spatial positions to split and yield the right-of-way.",
+      "Four people are doing a synchronized dance routine in the hallway.",
+      "A person is trying to catch three people, and they scatter to escape.",
+      "Three people are waiting in line, and the fourth person cuts to the front of the line."
+    ],
+    "answer": 0
+  }
+]
