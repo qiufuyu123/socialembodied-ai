@@ -3,8 +3,9 @@
 import { useCallback, useEffect, useState } from "react";
 
 interface AccuracyEntry {
-  correct: number;
-  total: number;
+  score: number;
+  answered: number;
+  questionCount: number;
   accuracy: number;
 }
 
@@ -68,6 +69,10 @@ export default function AdminPage() {
   const [stats, setStats] = useState<Stats | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
+  const [showClearModal, setShowClearModal] = useState(false);
+  const [clearPassword, setClearPassword] = useState("");
+  const [clearError, setClearError] = useState("");
+  const [clearing, setClearing] = useState(false);
 
   const fetchStats = useCallback(async () => {
     try {
@@ -87,6 +92,28 @@ export default function AdminPage() {
     const interval = setInterval(fetchStats, 10000);
     return () => clearInterval(interval);
   }, [fetchStats]);
+
+  const handleClear = async () => {
+    setClearing(true);
+    setClearError("");
+    try {
+      const res = await fetch("/api/admin/clear", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ password: clearPassword }),
+      });
+      if (!res.ok) {
+        const data = await res.json();
+        setClearError(data.error || "Failed");
+        return;
+      }
+      window.location.reload();
+    } catch {
+      setClearError("Request failed");
+    } finally {
+      setClearing(false);
+    }
+  };
 
   if (error && !stats) {
     return (
@@ -123,12 +150,58 @@ export default function AdminPage() {
             Live
           </span>
         </div>
-        {lastUpdated && (
-          <span className="text-xs text-gray-400">
-            Updated {lastUpdated.toLocaleTimeString()}
-          </span>
-        )}
+        <div className="flex items-center gap-4">
+          {lastUpdated && (
+            <span className="text-xs text-gray-400">
+              Updated {lastUpdated.toLocaleTimeString()}
+            </span>
+          )}
+          <button
+            onClick={() => { setShowClearModal(true); setClearPassword(""); setClearError(""); }}
+            className="px-3 py-1.5 text-xs font-semibold bg-red-600 hover:bg-red-700 text-white rounded-lg transition-colors"
+          >
+            Clear Database
+          </button>
+        </div>
       </div>
+
+      {/* Clear Database Modal */}
+      {showClearModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
+          <div className="bg-white rounded-xl shadow-xl p-6 w-full max-w-sm mx-4">
+            <h3 className="text-lg font-bold text-gray-900 mb-2">Clear All Data</h3>
+            <p className="text-sm text-gray-600 mb-4">
+              This will permanently delete all response records. Enter admin password to confirm.
+            </p>
+            <input
+              type="password"
+              placeholder="Enter password"
+              value={clearPassword}
+              onChange={(e) => setClearPassword(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && handleClear()}
+              className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none text-gray-900 mb-3"
+            />
+            {clearError && (
+              <p className="text-sm text-red-600 mb-3">{clearError}</p>
+            )}
+            <div className="flex gap-3 justify-end">
+              <button
+                onClick={() => setShowClearModal(false)}
+                className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleClear}
+                disabled={clearing || !clearPassword}
+                className="px-4 py-2 text-sm font-semibold text-white bg-red-600 hover:bg-red-700 disabled:opacity-40 rounded-lg transition-colors"
+              >
+                {clearing ? "Clearing..." : "Confirm Delete"}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       <div className="flex-1 overflow-y-auto p-4 md:p-6 space-y-6">
         {/* Summary cards */}
@@ -158,7 +231,7 @@ export default function AdminPage() {
                 <tr className="bg-gray-50 text-left text-gray-500">
                   <th className="px-5 py-3 font-medium">Task</th>
                   <th className="px-5 py-3 font-medium">Scenario</th>
-                  <th className="px-5 py-3 font-medium">Correct/Total</th>
+                  <th className="px-5 py-3 font-medium">Score / Answered / Total</th>
                   <th className="px-5 py-3 font-medium w-64">Accuracy</th>
                 </tr>
               </thead>
@@ -175,7 +248,11 @@ export default function AdminPage() {
                       </td>
                       <td className="px-5 py-3 text-gray-700">{scenario}</td>
                       <td className="px-5 py-3 text-gray-600">
-                        {data.correct}/{data.total}
+                        <span className="text-green-700 font-medium">{data.score}</span>
+                        {" / "}
+                        <span>{data.answered}</span>
+                        {" / "}
+                        <span className="text-gray-400">{data.questionCount}</span>
                       </td>
                       <td className="px-5 py-3">
                         <AccuracyBar accuracy={data.accuracy} />
@@ -192,7 +269,11 @@ export default function AdminPage() {
                     <td className="px-5 py-2 text-gray-900">{task}</td>
                     <td className="px-5 py-2 text-gray-500 italic">Subtotal</td>
                     <td className="px-5 py-2 text-gray-900">
-                      {data.correct}/{data.total}
+                      <span className="text-green-700">{data.score}</span>
+                      {" / "}
+                      <span>{data.answered}</span>
+                      {" / "}
+                      <span className="text-gray-400">{data.questionCount}</span>
                     </td>
                     <td className="px-5 py-2">
                       <AccuracyBar accuracy={data.accuracy} />
@@ -226,7 +307,7 @@ export default function AdminPage() {
               <thead>
                 <tr className="bg-gray-50 text-left text-gray-500">
                   <th className="px-5 py-3 font-medium">Type</th>
-                  <th className="px-5 py-3 font-medium">Correct/Total</th>
+                  <th className="px-5 py-3 font-medium">Score / Answered / Total</th>
                   <th className="px-5 py-3 font-medium w-64">Accuracy</th>
                 </tr>
               </thead>
@@ -240,7 +321,11 @@ export default function AdminPage() {
                       {type}
                     </td>
                     <td className="px-5 py-3 text-gray-600">
-                      {data.correct}/{data.total}
+                      <span className="text-green-700 font-medium">{data.score}</span>
+                      {" / "}
+                      <span>{data.answered}</span>
+                      {" / "}
+                      <span className="text-gray-400">{data.questionCount}</span>
                     </td>
                     <td className="px-5 py-3">
                       <AccuracyBar accuracy={data.accuracy} />
@@ -274,7 +359,7 @@ export default function AdminPage() {
               <thead>
                 <tr className="bg-gray-50 text-left text-gray-500">
                   <th className="px-5 py-3 font-medium">Perspective</th>
-                  <th className="px-5 py-3 font-medium">Correct/Total</th>
+                  <th className="px-5 py-3 font-medium">Score / Answered / Total</th>
                   <th className="px-5 py-3 font-medium w-64">Accuracy</th>
                 </tr>
               </thead>
@@ -288,7 +373,11 @@ export default function AdminPage() {
                       {persp}
                     </td>
                     <td className="px-5 py-3 text-gray-600">
-                      {data.correct}/{data.total}
+                      <span className="text-green-700 font-medium">{data.score}</span>
+                      {" / "}
+                      <span>{data.answered}</span>
+                      {" / "}
+                      <span className="text-gray-400">{data.questionCount}</span>
                     </td>
                     <td className="px-5 py-3">
                       <AccuracyBar accuracy={data.accuracy} />

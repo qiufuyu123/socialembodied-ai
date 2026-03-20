@@ -8,11 +8,11 @@ interface Question {
   videoUrl: string;
   question: string;
   choices: string[];
-  done?: boolean;
-  totalAnswered?: number;
+  answeredCount: number;
+  totalQuestions: number;
 }
 
-type FeedbackState = null | "correct" | "incorrect";
+type FeedbackState = null | "submitted";
 
 function EvaluateContent() {
   const searchParams = useSearchParams();
@@ -22,6 +22,7 @@ function EvaluateContent() {
   const [loading, setLoading] = useState(true);
   const [done, setDone] = useState(false);
   const [totalAnswered, setTotalAnswered] = useState(0);
+  const [totalQuestions, setTotalQuestions] = useState(0);
   const [feedback, setFeedback] = useState<FeedbackState>(null);
   const [submitting, setSubmitting] = useState(false);
   const questionLoadTime = useRef<number>(Date.now());
@@ -35,10 +36,12 @@ function EvaluateContent() {
         `/api/next-question?username=${encodeURIComponent(username)}`
       );
       const data = await res.json();
+      setTotalQuestions(data.totalQuestions ?? 0);
       if (data.done) {
         setDone(true);
         setTotalAnswered(data.totalAnswered ?? 0);
       } else {
+        setTotalAnswered(data.answeredCount ?? 0);
         setQuestion(data);
         questionLoadTime.current = Date.now();
       }
@@ -72,13 +75,13 @@ function EvaluateContent() {
           timeSpentMs,
         }),
       });
-      const result = await res.json();
-      setFeedback(result.isCorrect ? "correct" : "incorrect");
+      await res.json();
+      setFeedback("submitted");
 
       setTimeout(() => {
         setSubmitting(false);
         fetchNextQuestion();
-      }, 1500);
+      }, 800);
     } catch (err) {
       console.error("Failed to submit answer:", err);
       setSubmitting(false);
@@ -150,19 +153,28 @@ function EvaluateContent() {
   return (
     <main className="flex-1 flex flex-col bg-gradient-to-br from-indigo-50 via-white to-blue-50 min-h-0">
       {/* Top bar */}
-      <div className="bg-white border-b border-indigo-100 px-4 py-3 flex items-center justify-between shadow-sm">
-        <div className="flex items-center gap-3">
-          <span className="text-sm text-gray-500">User:</span>
-          <span className="font-medium text-gray-900">{username}</span>
+      <div className="bg-white border-b border-indigo-100 shadow-sm">
+        <div className="px-4 py-3 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <span className="text-sm text-gray-500">User:</span>
+            <span className="font-medium text-gray-900">{username}</span>
+          </div>
+          <div className="text-sm font-semibold text-indigo-600">
+            {totalAnswered}/{totalQuestions}
+          </div>
         </div>
-        <div className="text-sm font-semibold text-indigo-600">
-          Question #{question.questionIndex + 1}
+        {/* Progress bar */}
+        <div className="h-1.5 bg-indigo-100">
+          <div
+            className="h-full bg-indigo-500 transition-all duration-500"
+            style={{ width: totalQuestions > 0 ? `${(totalAnswered / totalQuestions) * 100}%` : "0%" }}
+          />
         </div>
       </div>
 
       {/* Content */}
       <div className="flex-1 overflow-y-auto p-4 md:p-6">
-        <div className="max-w-3xl mx-auto space-y-6">
+        <div className="max-w-4xl mx-auto space-y-6">
           {/* Video */}
           <div className="bg-black rounded-xl overflow-hidden shadow-lg">
             <video
@@ -181,7 +193,7 @@ function EvaluateContent() {
               {question.question}
             </h2>
 
-            <div className="space-y-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {question.choices.map((option, idx) => {
                 let cardStyle =
                   "border border-gray-200 bg-white hover:border-indigo-400 hover:bg-indigo-50 cursor-pointer";
@@ -196,12 +208,12 @@ function EvaluateContent() {
                     key={idx}
                     onClick={() => handleSelect(idx)}
                     disabled={submitting}
-                    className={`w-full text-left px-4 py-3 rounded-lg transition-colors ${cardStyle}`}
+                    className={`w-full text-left px-4 py-3 rounded-lg transition-colors flex items-start gap-3 ${cardStyle}`}
                   >
-                    <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-indigo-100 text-indigo-700 text-sm font-semibold mr-3">
+                    <span className="inline-flex items-center justify-center w-7 h-7 shrink-0 rounded-full bg-indigo-100 text-indigo-700 text-sm font-semibold">
                       {String.fromCharCode(65 + idx)}
                     </span>
-                    <span className="text-gray-800">{option}</span>
+                    <span className="text-gray-800 text-sm">{option}</span>
                   </button>
                 );
               })}
@@ -209,12 +221,8 @@ function EvaluateContent() {
 
             {/* Feedback */}
             {feedback && (
-              <div
-                className={`mt-4 px-4 py-3 rounded-lg text-center font-semibold text-white ${
-                  feedback === "correct" ? "bg-green-500" : "bg-red-500"
-                }`}
-              >
-                {feedback === "correct" ? "Correct!" : "Incorrect"}
+              <div className="mt-4 px-4 py-3 rounded-lg text-center font-semibold text-white bg-indigo-500">
+                Answer submitted! Loading next question...
               </div>
             )}
           </div>

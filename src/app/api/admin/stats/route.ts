@@ -3,11 +3,27 @@ import questions from "@/data/meta_full.json";
 
 export const dynamic = "force-dynamic";
 
-export async function GET(request: Request) {
+export async function GET() {
+  // Pre-compute question counts per category from meta_full.json
+  const qCountPerTask = new Map<string, number>();
+  const qCountPerType = new Map<string, number>();
+  const qCountPerPersp = new Map<string, number>();
+  const qCountPerScenario = new Map<string, Map<string, number>>();
+
+  for (const q of questions) {
+    qCountPerTask.set(q.task, (qCountPerTask.get(q.task) ?? 0) + 1);
+    const qtype = q.tag[1] ?? "unknown";
+    qCountPerType.set(qtype, (qCountPerType.get(qtype) ?? 0) + 1);
+    const persp = q.tag[0] ?? "unknown";
+    qCountPerPersp.set(persp, (qCountPerPersp.get(persp) ?? 0) + 1);
+    if (!qCountPerScenario.has(q.task)) qCountPerScenario.set(q.task, new Map());
+    const sm = qCountPerScenario.get(q.task)!;
+    sm.set(q.scenario, (sm.get(q.scenario) ?? 0) + 1);
+  }
+
   // Fetch all responses
   const allResponses = await prisma.response.findMany({
     select: {
-      id: true,
       username: true,
       questionIndex: true,
       isCorrect: true,
@@ -18,91 +34,104 @@ export async function GET(request: Request) {
   });
 
   const totalResponses = allResponses.length;
+  const uniqueUsers = new Set(allResponses.map((r) => r.username)).size;
 
-  // Unique users
-  const uniqueUsersSet = new Set(allResponses.map((r) => r.username));
-  const uniqueUsers = uniqueUsersSet.size;
-
-  // Overall accuracy
-  const correctCount = allResponses.filter((r) => r.isCorrect).length;
-  const overallAccuracy = totalResponses > 0 ? (correctCount / totalResponses) * 100 : 0;
-
-  // Build per-task, per-question-type (tag[1]), per-perspective (tag[0]), per-scenario stats
-  const perTaskMap = new Map<string, { correct: number; total: number }>();
-  const perQuestionTypeMap = new Map<string, { correct: number; total: number }>();
-  const perPerspectiveMap = new Map<string, { correct: number; total: number }>();
-  const perScenarioMap = new Map<string, Map<string, { correct: number; total: number }>>();
-  const answerDistribution = new Map<number, number>();
-
+  // Step 1: Group responses by questionIndex to compute per-question score
+  // Per-question score = (number of correct answers) / (number of total answers for that question)
+  const perQuestionResponses = new Map<number, { correctCount: number; totalCount: number }>();
   for (const r of allResponses) {
-    // Answer distribution
-    answerDistribution.set(r.questionIndex, (answerDistribution.get(r.questionIndex) ?? 0) + 1);
+    const entry = perQuestionResponses.get(r.questionIndex) ?? { correctCount: 0, totalCount: 0 };
+    entry.totalCount++;
+    if (r.isCorrect) entry.correctCount++;
+    perQuestionResponses.set(r.questionIndex, entry);
+  }
 
-    if (r.questionIndex < 0 || r.questionIndex >= questions.length) continue;
-    const q = questions[r.questionIndex];
+  // Per-question score: average correctness
+  const perQuestionScore = new Map<number, number>();
+  for (const [qIdx, entry] of perQuestionResponses) {
+    perQuestionScore.set(qIdx, entry.correctCount / entry.totalCount);
+  }
 
-    // Per task
-    const taskEntry = perTaskMap.get(q.task) ?? { correct: 0, total: 0 };
-    taskEntry.total++;
-    if (r.isCorrect) taskEntry.correct++;
-    perTaskMap.set(q.task, taskEntry);
+  // Step 2: Aggregate per-question scores by category
+  // "answered" = number of distinct questions that have at least one response in that category
+  // "score" = sum of per-question scores for questions in that category
+  type CategoryAgg = { scoreSum: number; answeredCount: number };
 
-    // Per question type (tag[1])
-    const questionType = q.tag[1] ?? "unknown";
-    const typeEntry = perQuestionTypeMap.get(questionType) ?? { correct: 0, total: 0 };
-    typeEntry.total++;
-    if (r.isCorrect) typeEntry.correct++;
-    perQuestionTypeMap.set(questionType, typeEntry);
+  const perTaskAgg = new Map<string, CategoryAgg>();
+  const perTypeAgg = new Map<string, CategoryAgg>();
+  const perPerspAgg = new Map<string, CategoryAgg>();
+  const perScenAgg = new Map<string, Map<string, CategoryAgg>>();
 
-    // Per perspective (tag[0])
-    const perspective = q.tag[0] ?? "unknown";
-    const perspEntry = perPerspectiveMap.get(perspective) ?? { correct: 0, total: 0 };
-    perspEntry.total++;
-    if (r.isCorrect) perspEntry.correct++;
-    perPerspectiveMap.set(perspective, perspEntry);
+  for (const [qIdx, score] of perQuestionScore) {
+    if (qIdx < 0 || qIdx >= questions.length) continue;
+    const q = questions[qIdx];
 
-    // Per scenario (nested by task)
-    if (!perScenarioMap.has(q.task)) {
-      perScenarioMap.set(q.task, new Map());
+    const addTo = (map: Map<string, CategoryAgg>, key: string) => {
+      const e = map.get(key) ?? { scoreSum: 0, answeredCount: 0 };
+      e.scoreSum += score;
+      e.answeredCount++;
+      map.set(key, e);
+    };
+
+    addTo(perTaskAgg, q.task);
+    addTo(perTypeAgg, q.tag[1] ?? "unknown");
+    addTo(perPerspAgg, q.tag[0] ?? "unknown");
+
+    if (!perScenAgg.has(q.task)) perScenAgg.set(q.task, new Map());
+    const sm = perScenAgg.get(q.task)!;
+    const se = sm.get(q.scenario) ?? { scoreSum: 0, answeredCount: 0 };
+    se.scoreSum += score;
+    se.answeredCount++;
+    sm.set(q.scenario, se);
+  }
+
+  // Overall accuracy: average of all per-question scores
+  let overallScoreSum = 0;
+  for (const score of perQuestionScore.values()) {
+    overallScoreSum += score;
+  }
+  const answeredQuestions = perQuestionScore.size;
+  const overallAccuracy = answeredQuestions > 0 ? (overallScoreSum / answeredQuestions) * 100 : 0;
+
+  // Step 3: Build output entries
+  type Entry = { score: number; answered: number; questionCount: number; accuracy: number };
+
+  const buildEntries = (
+    aggMap: Map<string, CategoryAgg>,
+    countMap: Map<string, number>,
+  ): Record<string, Entry> => {
+    const result: Record<string, Entry> = {};
+    for (const [key, qCount] of countMap) {
+      const agg = aggMap.get(key) ?? { scoreSum: 0, answeredCount: 0 };
+      result[key] = {
+        score: Math.round(agg.scoreSum * 100) / 100,
+        answered: agg.answeredCount,
+        questionCount: qCount,
+        accuracy: agg.answeredCount > 0 ? (agg.scoreSum / agg.answeredCount) * 100 : 0,
+      };
     }
-    const scenarioMap = perScenarioMap.get(q.task)!;
-    const scenEntry = scenarioMap.get(q.scenario) ?? { correct: 0, total: 0 };
-    scenEntry.total++;
-    if (r.isCorrect) scenEntry.correct++;
-    scenarioMap.set(q.scenario, scenEntry);
-  }
+    return result;
+  };
 
-  // Convert maps to plain objects with accuracy
-  const withAccuracy = (entry: { correct: number; total: number }) => ({
-    correct: entry.correct,
-    total: entry.total,
-    accuracy: entry.total > 0 ? (entry.correct / entry.total) * 100 : 0,
-  });
+  const perTask = buildEntries(perTaskAgg, qCountPerTask);
+  const perQuestionType = buildEntries(perTypeAgg, qCountPerType);
+  const perPerspective = buildEntries(perPerspAgg, qCountPerPersp);
 
-  const perTask: Record<string, { correct: number; total: number; accuracy: number }> = {};
-  for (const [task, entry] of perTaskMap) {
-    perTask[task] = withAccuracy(entry);
-  }
-
-  const perQuestionType: Record<string, { correct: number; total: number; accuracy: number }> = {};
-  for (const [type, entry] of perQuestionTypeMap) {
-    perQuestionType[type] = withAccuracy(entry);
-  }
-
-  const perPerspective: Record<string, { correct: number; total: number; accuracy: number }> = {};
-  for (const [persp, entry] of perPerspectiveMap) {
-    perPerspective[persp] = withAccuracy(entry);
-  }
-
-  const perScenario: Record<string, Record<string, { correct: number; total: number; accuracy: number }>> = {};
-  for (const [task, scenarioMap] of perScenarioMap) {
+  const perScenario: Record<string, Record<string, Entry>> = {};
+  for (const [task, scenCountMap] of qCountPerScenario) {
     perScenario[task] = {};
-    for (const [scenario, entry] of scenarioMap) {
-      perScenario[task][scenario] = withAccuracy(entry);
+    const aggMap = perScenAgg.get(task);
+    for (const [scenario, qCount] of scenCountMap) {
+      const agg = aggMap?.get(scenario) ?? { scoreSum: 0, answeredCount: 0 };
+      perScenario[task][scenario] = {
+        score: Math.round(agg.scoreSum * 100) / 100,
+        answered: agg.answeredCount,
+        questionCount: qCount,
+        accuracy: agg.answeredCount > 0 ? (agg.scoreSum / agg.answeredCount) * 100 : 0,
+      };
     }
   }
 
-  // Recent responses (first 20, already ordered desc)
   const recentResponses = allResponses.slice(0, 20).map((r) => ({
     username: r.username,
     questionIndex: r.questionIndex,
@@ -111,14 +140,13 @@ export async function GET(request: Request) {
     createdAt: r.createdAt,
   }));
 
-  // Answer distribution as plain object
   const answerDist: Record<number, number> = {};
-  for (const [idx, count] of answerDistribution) {
-    answerDist[idx] = count;
+  for (const [idx, count] of perQuestionResponses) {
+    answerDist[idx] = count.totalCount;
   }
 
   return Response.json({
-    totalQuestions: 267,
+    totalQuestions: questions.length,
     totalResponses,
     uniqueUsers,
     overallAccuracy,

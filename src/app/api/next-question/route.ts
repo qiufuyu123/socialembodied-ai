@@ -33,8 +33,11 @@ export async function GET(request: NextRequest) {
     .map((q, idx) => ({ question: q, idx }))
     .filter((item) => !answeredSet.has(item.idx));
 
+  const totalQuestions = questions.length;
+  const answeredCount = answeredSet.size;
+
   if (remaining.length === 0) {
-    return Response.json({ done: true, totalAnswered: answeredSet.size });
+    return Response.json({ done: true, totalAnswered: answeredCount, totalQuestions });
   }
 
   // Sort by answer count ascending, then pick randomly among the least-answered
@@ -54,9 +57,11 @@ export async function GET(request: NextRequest) {
     questionIndex: picked.idx,
     question: q.question,
     choices: q.choices,
-    videoUrl: `https://h50wzpr6odfrsqqp.public.blob.vercel-storage.com/${q.video}`,
+    videoUrl: `https://huggingface.co/datasets/qiufuyu123/SocialEmbodiedAI/resolve/main/${q.clip}`,
     task: q.task,
     scenario: q.scenario,
     tag: q.tag,
+    answeredCount,
+    totalQuestions,
   });
 }
